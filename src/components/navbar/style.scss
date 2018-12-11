@@ -3,7 +3,7 @@
 @import '@material/react-material-icon/index.scss';
 
 .navbar {
-  @include mdc-top-app-bar-fill-color($COLOR_BRAND_SECONDARY_LIGHT);
+  @include mdc-top-app-bar-fill-color($COLOR_BRAND_PRIMARY_DARK);
 
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
