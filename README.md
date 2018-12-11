@@ -11,7 +11,16 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 #### SASS
 
 `npm install node-sass --save`<br>
-Change existing .css file to .scss
+Change all existing .css file to .scss
+
+#### Google Material UI via [MDC React](https://github.com/material-components/material-components-web-react)
+
+Set SASS_PATH environment variable that points to node_module directory<br>
+`SET SASS_PATH=.\node_modules`
+
+- [Components Catalog](https://material-components.github.io/material-components-web-catalog/#/)
+- [Material Icons](https://github.com/material-components/material-components-web-react/tree/master/packages/material-icon)
+
 
 # Deployment
 
