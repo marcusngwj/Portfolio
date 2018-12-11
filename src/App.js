@@ -1,10 +1,10 @@
 import React, { Component } from 'react';
+import './App.scss';
 
-import ButtonTheme from './components/button/ButtonTheme';
 import NavBar from './components/navbar/NavBar';
 import {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 
-import './App.scss';
+import HomeScene from './scenes/home/HomeScene';
 
 class App extends Component {
   render() {
@@ -12,8 +12,7 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <TopAppBarFixedAdjust>
-	      <ButtonTheme />
-	      <div className="tempdiv"></div>
+          <HomeScene />
 	    </TopAppBarFixedAdjust>
       </div>
     );
