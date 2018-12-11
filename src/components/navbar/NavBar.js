@@ -9,16 +9,14 @@ class NavBar extends Component {
       <div>
       <TopAppBar
         className="navbar"
-        title='Testing navbar'
         navigationIcon={<MaterialIcon
-          icon='home'
-          onClick={() => console.log('click')}
-        />}
+                         icon='home'
+                         onClick={() => console.log('click')} />}
 
         actionItems={[<MaterialIcon key='item' 
                        icon='menu' 
                        className='hamburger-icon' 
-                       onClick={() => console.log('sada')}/>]}
+                       onClick={() => console.log('sada')} />]}
       />
       
     </div>
