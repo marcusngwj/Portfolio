@@ -5,6 +5,7 @@ import NavBar from './components/navbar/NavBar';
 import {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 
 import HomeScene from './scenes/home/HomeScene';
+import PortfolioScene from './scenes/portfolio/PortfolioScene';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <NavBar />
         <TopAppBarFixedAdjust>
           <HomeScene />
+          <PortfolioScene />
 	    </TopAppBarFixedAdjust>
       </div>
     );
