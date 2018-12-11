@@ -13,6 +13,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 `npm install node-sass --save`<br>
 Change all existing .css file to .scss
 
+- [Mixins](https://scotch.io/tutorials/how-to-use-sass-mixins)
+
 #### Google Material UI via [MDC React](https://github.com/material-components/material-components-web-react)
 
 Set SASS_PATH environment variable that points to node_module directory<br>
