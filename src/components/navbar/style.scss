@@ -1,8 +1,9 @@
+@import 'theme/theme.scss';
 @import '@material/react-top-app-bar/index.scss';
 @import '@material/react-material-icon/index.scss';
 
 .navbar {
-  @include mdc-top-app-bar-ink-color(yellow);
+  @include mdc-top-app-bar-fill-color($COLOR_BRAND_SECONDARY_LIGHT);
 
   -webkit-touch-callout: none; /* iOS Safari */
     -webkit-user-select: none; /* Safari */
@@ -12,6 +13,5 @@
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 
   .hamburger-icon { 
-  	color: red;
   }
 }
