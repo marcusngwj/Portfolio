@@ -1,0 +1,25 @@
+@import 'theme/theme.scss';
+@import '@material/react-text-field/index.scss';
+@import '@material/textfield/mixins';
+
+.searchbar {
+  margin: 50px;
+  width: 100%;
+
+  .container {
+  	border-style: solid;
+  	.icon-search {
+	  left: 9px;
+	}
+	  
+	.button-cancel {
+	  pointer-events: auto;	// So that it will be clickable
+	}
+
+	.input-area {
+	  margin-left: 40px;
+	  @include mdc-text-field-fullwidth-bottom-line-color(white);
+	  @include mdc-text-field-hover-bottom-line-color(white);
+	}
+  }  
+}
