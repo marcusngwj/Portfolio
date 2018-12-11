@@ -7,7 +7,7 @@ class ButtonTheme extends Component {
     return (
       <Button
         raised
-        className='button-theme'
+        className="button-theme"
         onClick={() => console.log('clicked!')}
       >
         Save Me!

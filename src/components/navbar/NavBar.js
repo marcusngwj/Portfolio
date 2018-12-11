@@ -15,7 +15,7 @@ class NavBar extends Component {
 
         actionItems={[<MaterialIcon key='item' 
                        icon='menu' 
-                       className='hamburger-icon' 
+                       className="hamburger-icon" 
                        onClick={() => console.log('sada')} />]}
       />
       

@@ -5,7 +5,10 @@ class HeaderBanner extends Component {
   render() {
     return (
       <div className="header-banner">
-        <p className="title">Hello, I'm Marcus!</p>
+      	<div className="content">
+	      <p className="title">Hello, I'm Marcus!</p>
+	      <p className="subtitle">Final Year NUS Computer Science Undergraduate</p>
+      	</div>
       </div>
     );
   }
