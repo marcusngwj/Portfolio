@@ -1,5 +1,7 @@
 import defaultImg from './img/default.png';
 import p10000 from './img/p10000.png';
+import p10001 from './img/p10001.png';
+import p10002 from './img/p10002.png';
 
 class PortfolioMetadata  {
 	constructor() {
@@ -17,12 +19,12 @@ class PortfolioMetadata  {
 			10001: {title: 'Taskell',
 					desc: 'Desktop Task Manager Application',
 					period: 'Aug 2016 - Nov 2016',
-					image: defaultImg,
+					image: p10001,
 					url: ''},
 			10002: {title: 'kboxLyricsBot',
 					desc: 'Telegram Bot to search for song lyrics',
 					period: 'Jan 2017',
-					image: defaultImg,
+					image: p10002,
 					url: ''},
 			10003: {title: 'SpaXi',
 					desc: 'Static Program Analyzer',
