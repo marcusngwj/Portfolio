@@ -14,7 +14,7 @@ class PortfolioScene extends Component {
       	  <Row>
       	  	<Cell columns={12}><SearchBar /></Cell>
       	  </Row>
-      	  <Row>
+      	  <Row className="content">
       	  	<Cell columns={4}><CardTheme /></Cell>
       	  	<Cell columns={4}><CardTheme /></Cell>
       	  	<Cell columns={4}><CardTheme /></Cell>
