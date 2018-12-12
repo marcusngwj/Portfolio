@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { Path } from './Path';
 import './App.scss';
 
 import NavBar from './components/navbar/NavBar';
@@ -16,8 +17,8 @@ class App extends Component {
           <NavBar />
           <TopAppBarFixedAdjust>
             <Switch>
-              <Route exact path='/' component={HomeScene} />
-              <Route path='/portfolio' component={PortfolioScene} />
+              <Route exact path={Path.HOME} component={HomeScene} />
+              <Route path={Path.PORTFOLIO} component={PortfolioScene} />
             </Switch>
   	      </TopAppBarFixedAdjust>
         </div>

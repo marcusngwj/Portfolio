@@ -1,6 +1,8 @@
 @import 'theme/theme.scss';
 @import '@material/react-top-app-bar/index.scss';
 @import '@material/react-material-icon/index.scss';
+@import '@material/react-menu-surface/index.scss';
+@import "@material/menu-surface/mdc-menu-surface";
 
 .navbar {
   @include mdc-top-app-bar-fill-color($COLOR_BRAND_PRIMARY_DARK);
@@ -13,5 +15,24 @@
             user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 
   .hamburger-icon { 
+  }
+}
+
+.menu-list {
+  @include mdc-menu-surface-fill-color($COLOR_BRAND_PRIMARY_DARK);
+  @include mdc-menu-surface-ink-color(white);
+  margin: 0.5rem;
+
+  .menu-item {
+  	text-decoration: none;
+  	color: inherit;
+  	
+  	h4 {
+  	  margin: 0;
+  	  padding: 1rem;
+  	  &:hover {
+  	    background-color: $COLOR_BRAND_SECONDARY_LIGHT;
+  	  }
+  	}
   }
 }
