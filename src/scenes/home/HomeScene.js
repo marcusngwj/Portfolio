@@ -9,7 +9,6 @@ class HomeScene extends Component {
     return (
       <div className="home-scene">
         <HeaderBanner />
-        <ButtonTheme />
       </div>
     );
   }
