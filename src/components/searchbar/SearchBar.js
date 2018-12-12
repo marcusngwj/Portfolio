@@ -1,6 +1,6 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './style.scss';
-import TextField, {HelperText, Input} from '@material/react-text-field';
+import TextField, { HelperText, Input } from '@material/react-text-field';
 import MaterialIcon from '@material/react-material-icon';
 
 class SearchBar extends Component {

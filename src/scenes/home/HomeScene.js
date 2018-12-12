@@ -1,4 +1,4 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 import './style.scss';
 
 import ButtonTheme from 'components/button/ButtonTheme';
