@@ -28,7 +28,7 @@ If the following error occurred, please reset the `SASS_PATH`:<br>
 - [Color Tool](https://material.io/tools/color/#!/?view.left=0&view.right=0)
 
 
-# Deployment
+## Deployment
 
 In the project directory, you can run:
 
@@ -46,3 +46,21 @@ See the section about [running tests](https://facebook.github.io/create-react-ap
 
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance. The build is minified and the filenames include the hashes.<br> See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### [Firebase](https://firebase.google.com/)
+
+#### `npm install -g firebase-tools`
+
+This installs the globally available `firebase` command. To update to the latest version, simply re-run the same command.
+
+#### `firebase login`
+
+Connects local machine to Firebase account and obtains access to Firebase projects
+
+#### `firebase init`
+
+This command should be ran from the project's root directory, creating a `firebase.json` configuration file and a `.firebaserc` file in that directory. The `firebase.json` file is required for deployment using the CLI.
+
+#### `firebase deploy`
+
+This command deploys a release to the Firebae project's default Hosting site.
