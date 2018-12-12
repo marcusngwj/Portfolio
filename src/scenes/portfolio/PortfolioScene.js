@@ -10,7 +10,16 @@ class PortfolioScene extends Component {
   render() {
     return (
       <div className="portfolio-scene">
-      	<SearchBar />
+      	<Grid>
+      	  <Row>
+      	  	<Cell columns={12}><SearchBar /></Cell>
+      	  </Row>
+      	  <Row>
+      	  	<Cell columns={4}><CardTheme /></Cell>
+      	  	<Cell columns={4}><CardTheme /></Cell>
+      	  	<Cell columns={4}><CardTheme /></Cell>
+      	  </Row>
+      	</Grid>
       </div>
     );
   }
