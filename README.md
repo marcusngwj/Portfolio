@@ -20,6 +20,9 @@ Change all existing .css file to .scss
 Set SASS_PATH environment variable that points to node_module directory<br>
 `SET SASS_PATH=.\node_modules`
 
+If the following error occurred, please reset the `SASS_PATH`:<br>
+![missing sass path](failedtocompile.PNG)<br>
+
 - [Components Catalog](https://material-components.github.io/material-components-web-catalog/#/)
 - [Material Icons](https://github.com/material-components/material-components-web-react/tree/master/packages/material-icon)
 - [Color Tool](https://material.io/tools/color/#!/?view.left=0&view.right=0)
