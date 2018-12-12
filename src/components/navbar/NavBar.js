@@ -43,7 +43,7 @@ class NavBar extends Component {
         >
           <Link to={Path.ABOUT} className="menu-item"><h4>About</h4></Link>
           <Link to={Path.PORTFOLIO} className="menu-item"><h4>Portfolio</h4></Link>
-          <Link to={Path.RESUME} className="menu-item"><h4>Resume</h4></Link>
+          <a target='_blank' href={Path.RESUME} className="menu-item"><h4>Resume</h4></a>
           <Link to={Path.CONTACT} className="menu-item"><h4>Contact Me</h4></Link>
         </MenuSurface>
     </div>
