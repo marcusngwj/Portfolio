@@ -1,3 +1,5 @@
+@import "@material/layout-grid/mixins";
+
 .header-banner {
   height: 100vh;
   display: flex;
@@ -5,12 +7,36 @@
   justify-content: center;
 
   .content {
-  	.title {
-  	  padding: 0;
-  	  margin: 0;
-  	  font-size:4rem;
-  	  line-height: 4rem;
-  	  color: white;
+    .title {
+      padding: 0;
+      margin: 0;
+      font-size:4rem;
+      line-height: 4rem;
+      color: white;
     }
+
+    .subtitle {
+      color: white;
+    }
+  }
+
+  @include mdc-layout-grid-media-query_(phone) {
+    background: url("img/background-phone.png") no-repeat center center fixed; 
+    text-align: right;
+    .subtitle {
+      visibility: hidden;
+    }
+  }
+
+  @include mdc-layout-grid-media-query_(tablet) {
+    background: url("img/background-desktop.png") no-repeat center center fixed; 
+  }
+
+  @include mdc-layout-grid-media-query_(desktop) {
+    background: url("img/background-desktop.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 }
