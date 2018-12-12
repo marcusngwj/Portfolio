@@ -22,12 +22,6 @@ class CardTheme extends Component {
             {this.props.info}
           </div>
         </CardPrimaryContent>
-
-        <CardActions>
-          <CardActionButtons>
-            <button>Show Tags</button>
-          </CardActionButtons>
-        </CardActions>
       </Card>
     );
   }
