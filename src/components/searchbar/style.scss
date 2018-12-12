@@ -1,0 +1,29 @@
+@import 'theme/theme.scss';
+@import '@material/react-text-field/index.scss';
+@import '@material/textfield/mixins';
+
+.searchbar {
+  width: 100%;
+
+  .container {
+  	border-style: solid;
+  	@include mdc-text-field-textarea-stroke-color($COLOR_BRAND_PRIMARY_LIGHT);
+
+  	.icon-search {
+	  left: 9px;
+	}
+	  
+	.button-cancel {
+	  pointer-events: auto;	// So that it will be clickable
+	}
+
+	.input-area {
+	  margin-left: 40px;
+	  padding-right: 5.5rem;
+	  border-bottom: transparent;
+	  @include mdc-text-field-fullwidth-bottom-line-color(transparent);
+	  @include mdc-text-field-caret-color($COLOR_BRAND_PRIMARY_DARK);
+	}
+
+  }  
+}
