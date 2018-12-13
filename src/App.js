@@ -4,7 +4,6 @@ import { Path } from './Path';
 import './App.scss';
 
 import NavBar from './components/navbar/NavBar';
-import { TopAppBarFixedAdjust } from '@material/react-top-app-bar';
 
 import HomeScene from './scenes/home/HomeScene';
 import PortfolioScene from './scenes/portfolio/PortfolioScene';
@@ -15,12 +14,10 @@ class App extends Component {
       <BrowserRouter>
         <div className="App">
           <NavBar />
-          <TopAppBarFixedAdjust>
-            <Switch>
-              <Route exact path={Path.HOME} component={HomeScene} />
-              <Route path={Path.PORTFOLIO} component={PortfolioScene} />
-            </Switch>
-  	      </TopAppBarFixedAdjust>
+          <Switch>
+            <Route exact path={Path.HOME} component={HomeScene} />
+            <Route path={Path.PORTFOLIO} component={PortfolioScene} />
+          </Switch>
         </div>
       </BrowserRouter>
     );

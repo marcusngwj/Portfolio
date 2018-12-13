@@ -24,15 +24,14 @@ class NavBar extends Component {
   render() {
     return (
       <div className="mdc-menu-surface--anchor" ref={this.setAnchorElement}>
-        <TopAppBar
+        <TopAppBar 
+          shortCollapsed
           className="navbar"
-          navigationIcon={<Link to={Path.HOME} ><MaterialIcon icon='home'/></Link>}
-
           actionItems={[<MaterialIcon key='item' 
                          icon='menu' 
                          className="hamburger-icon" 
                          onClick={() => this.setState({open: true, 
-                                                       coordinates: {x: this.state.anchorElement.lastChild.getBoundingClientRect().right, 
+                                                       coordinates: {x: this.state.anchorElement.lastChild.getBoundingClientRect().left, 
                                                                      y: this.state.anchorElement.lastChild.getBoundingClientRect().bottom} }) } />]}
         />
         <MenuSurface
@@ -41,6 +40,7 @@ class NavBar extends Component {
           onClose={() => this.setState({open: false, coordinates: null})}
           coordinates={this.state.coordinates}
         >
+          <Link to={Path.HOME} className="menu-item"><h4>Home</h4></Link>
           <Link to={Path.ABOUT} className="menu-item"><h4>About</h4></Link>
           <Link to={Path.PORTFOLIO} className="menu-item"><h4>Portfolio</h4></Link>
           <a target='_blank' href={Path.RESUME} className="menu-item"><h4>Resume</h4></a>

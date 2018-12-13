@@ -5,6 +5,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url("img/background-desktop.png") no-repeat center center fixed;
 
   .content {
     .title {
@@ -22,18 +23,24 @@
 
   @include breakpoint(phone) {
     background: url("img/background-phone.png") no-repeat center center fixed; 
-    text-align: right;
+    text-align: right; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
     .subtitle {
       visibility: hidden;
     }
   }
 
   @include breakpoint(tablet) {
-    background: url("img/background-desktop.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
   }
 
   @include breakpoint(desktop) {
-    background: url("img/background-desktop.png") no-repeat center center fixed; 
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
