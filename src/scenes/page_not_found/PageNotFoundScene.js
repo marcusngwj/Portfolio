@@ -3,7 +3,7 @@ import './style.scss';
 
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 
-class PageNotFound extends Component {
+class PageNotFoundScene extends Component {
   render() {
     return (
       <div className="portfolio-scene">
@@ -17,4 +17,4 @@ class PageNotFound extends Component {
   }
 }
 
-export default PageNotFound;
+export default PageNotFoundScene;
