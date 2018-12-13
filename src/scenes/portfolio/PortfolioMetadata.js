@@ -1,3 +1,4 @@
+import { PathPortfolio } from 'Path';
 import defaultImg from './img/default.png';
 import p10000 from './img/p10000.png';
 import p10001 from './img/p10001.png';
@@ -15,7 +16,7 @@ class PortfolioMetadata  {
 					desc: 'Multiplayer Android Mobile Quiz Game',
 					period: 'May 2016 - Aug 2016',
 					image: p10000,
-					url: ''},
+					url: PathPortfolio.p10000},
 			10001: {title: 'Taskell',
 					desc: 'Desktop Task Manager Application',
 					period: 'Aug 2016 - Nov 2016',
