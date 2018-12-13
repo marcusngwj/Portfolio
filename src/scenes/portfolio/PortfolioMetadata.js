@@ -23,13 +23,13 @@ class PortfolioMetadata  {
 					desc: 'Database Project',
 					period: 'Aug 2018 - Nov 2018',
 					image: p10005,
-					url: PathPortfolio.PAGE_NOT_FOUND},
+					url: PathPortfolio.P10005},
 
 			10004: {title: 'P2P File Transfer',
 					desc: 'Networking Project',
 					period: 'Aug 2018 - Nov 2018',
 					image: p10004,
-					url: PathPortfolio.PAGE_NOT_FOUND},
+					url: PathPortfolio.P10004},
 
 			10003: {title: 'SpaXi',
 					desc: 'Static Program Analyzer',
@@ -63,13 +63,13 @@ class PortfolioMetadata  {
 					desc: 'iOS Development Internship',
 					period: 'Jan 2018 - Jun 2018',
 					image: w40001,
-					url: PathPortfolio.PAGE_NOT_FOUND},
+					url: PathPortfolio.W40001},
 
 			40000: {company: 'Enviro-Hub Holdings Ltd',
 					desc: 'IT Helpdesk Internship',
 					period: 'May 2015 - Jul 2015',
 					image: w40000,
-					url: PathPortfolio.PAGE_NOT_FOUND}
+					url: PathPortfolio.W40000}
 		};
 	}
 }

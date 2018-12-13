@@ -8,6 +8,8 @@ $COLOR_BRAND_SECONDARY: #013d74;
 $COLOR_BRAND_SECONDARY_LIGHT: #4367a3;
 $COLOR_BRAND_SECONDARY_DARK: #001848;
 
+$PADDING_PORTFOLIO_BORDER: 1rem;
+
 @mixin breakpoint($size) {
   @include mdc-layout-grid-media-query_($size) {
     @content;
