@@ -1,8 +1,15 @@
 import { PathPortfolio } from 'Path';
+
 import defaultImg from './img/default.png';
 import p10000 from './img/p10000.png';
 import p10001 from './img/p10001.png';
 import p10002 from './img/p10002.png';
+import p10003 from './img/p10003.png';
+import p10004 from './img/p10004.png';
+import p10005 from './img/p10005.png';
+
+import w40000 from './img/w40000.png';
+import w40001 from './img/w40001.png';
 
 class PortfolioMetadata  {
 	constructor() {
@@ -13,21 +20,21 @@ class PortfolioMetadata  {
 	getProjects() {
 		return {
 			10005: {title: 'Crowdfunding Website',
-					desc: '',
+					desc: 'Database Project',
 					period: 'Aug 2018 - Nov 2018',
-					image: defaultImg,
+					image: p10005,
 					url: PathPortfolio.PAGE_NOT_FOUND},
 
 			10004: {title: 'P2P File Transfer',
-					desc: '',
+					desc: 'Networking Project',
 					period: 'Aug 2018 - Nov 2018',
-					image: defaultImg,
+					image: p10004,
 					url: PathPortfolio.PAGE_NOT_FOUND},
 
 			10003: {title: 'SpaXi',
 					desc: 'Static Program Analyzer',
 					period: 'Aug 2017 - Nov 2017',
-					image: defaultImg,
+					image: p10003,
 					url: PathPortfolio.P10003},
 
 			10002: {title: 'kboxLyricsBot',
@@ -55,13 +62,13 @@ class PortfolioMetadata  {
 			40001: {company: 'Micepad',
 					desc: 'iOS Development Internship',
 					period: 'Jan 2018 - Jun 2018',
-					image: defaultImg,
+					image: w40001,
 					url: PathPortfolio.PAGE_NOT_FOUND},
 
 			40000: {company: 'Enviro-Hub Holdings Ltd',
 					desc: 'IT Helpdesk Internship',
 					period: 'May 2015 - Jul 2015',
-					image: defaultImg,
+					image: w40000,
 					url: PathPortfolio.PAGE_NOT_FOUND}
 		};
 	}
