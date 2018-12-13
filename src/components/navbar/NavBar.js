@@ -43,6 +43,7 @@ class NavBar extends Component {
           open={this.state.open}
           onClose={this.closeMenu}
           coordinates={this.state.coordinates}
+          fixed={true}
         >
           <Link to={Path.HOME} className="menu-item" onClick={this.closeMenu}>
             <h4>Home</h4>
