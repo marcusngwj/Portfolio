@@ -52,15 +52,15 @@ class PortfolioMetadata  {
 
 	getWorkExperiences() {
 		return {
-			40001: {title: 'Taskell',
-					desc: 'Desktop Task Manager Application',
-					period: 'Aug 2016 - Nov 2016',
+			40001: {company: 'Micepad',
+					desc: 'iOS Development Internship',
+					period: 'Jan 2018 - Jun 2018',
 					image: defaultImg,
 					url: PathPortfolio.PAGE_NOT_FOUND},
 
-			40000: {title: 'Bomb Squard',
-					desc: 'Multiplayer Android Mobile Quiz Game',
-					period: 'May 2016 - Aug 2016',
+			40000: {company: 'Enviro-Hub Holdings Ltd',
+					desc: 'IT Helpdesk Internship',
+					period: 'May 2015 - Jul 2015',
 					image: defaultImg,
 					url: PathPortfolio.PAGE_NOT_FOUND}
 		};

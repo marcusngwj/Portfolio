@@ -26,7 +26,7 @@ class PortfolioScene extends Component {
                                                                           </Cell>)}
 
       	  	{Object.entries(this.metaData.workExperiences).map(([key, value]) => <Cell columns={4}>
-                                                                                   <CardTheme title={value.title} 
+                                                                                   <CardTheme title={value.company} 
                                                                                               subtitle={value.period} 
                                                                                               info={value.desc} 
                                                                                               img={value.image} 
