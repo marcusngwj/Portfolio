@@ -8,6 +8,14 @@ import CardTheme from 'components/card/CardTheme';
 
 class PortfolioScene extends Component {
   metaData = new PortfolioMetadata();
+  projects = this.getArrayOrderByKeyDescending(this.metaData.projects);
+  workExperiences = this.getArrayOrderByKeyDescending(this.metaData.workExperiences);
+
+  getArrayOrderByKeyDescending(dict) {
+    var items = Object.keys(dict).map(function(key) { return [key, dict[key]]; });
+    items.sort(function(first, second) { return second[0] - first[0]; });
+    return items;
+  };
 
   render() {
     return (
@@ -17,21 +25,21 @@ class PortfolioScene extends Component {
       	  	<Cell columns={12}><SearchBar /></Cell>
       	  </Row>
       	  <Row className="content">
-      	  	{Object.entries(this.metaData.projects).map(([key, value]) => <Cell columns={4}>
-                                                                            <CardTheme title={value.title} 
-                                                                                       subtitle={value.period} 
-                                                                                       info={value.desc} 
-                                                                                       img={value.image} 
-                                                                                       url={value.url}/>
-                                                                          </Cell>)}
+      	  	{this.projects.map((arr) => <Cell columns={4}>
+                                          <CardTheme title={arr[1].title} 
+                                                     subtitle={arr[1].period} 
+                                                     info={arr[1].desc} 
+                                                     img={arr[1].image} 
+                                                     url={arr[1].url} />
+                                        </Cell>)}
 
-      	  	{Object.entries(this.metaData.workExperiences).map(([key, value]) => <Cell columns={4}>
-                                                                                   <CardTheme title={value.company} 
-                                                                                              subtitle={value.period} 
-                                                                                              info={value.desc} 
-                                                                                              img={value.image} 
-                                                                                              url={value.url}/>
-                                                                                 </Cell>)}
+      	  	{this.workExperiences.map((arr) => <Cell columns={4}>
+                                                 <CardTheme title={arr[1].company} 
+                                                            subtitle={arr[1].period} 
+                                                            info={arr[1].desc} 
+                                                            img={arr[1].image} 
+                                                            url={arr[1].url}/>
+                                               </Cell>)}
       	  </Row>
       	</Grid>
       </div>
