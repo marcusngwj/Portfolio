@@ -5,10 +5,10 @@ import './style.scss';
 
 import PageNotFoundScene from 'scenes/page_not_found/PageNotFoundScene';
 import PortfolioScene from 'scenes/portfolio/PortfolioScene';
-import P10000 from './projects/p10000/P10000';
-import P10001 from './projects/p10001/P10001';
-import P10002 from './projects/p10002/P10002';
-import P10003 from './projects/p10003/P10003';
+import P10000 from 'scenes/portfolio/projects/p10000/P10000';
+import P10001 from 'scenes/portfolio/projects/p10001/P10001';
+import P10002 from 'scenes/portfolio/projects/p10002/P10002';
+import P10003 from 'scenes/portfolio/projects/p10003/P10003';
 
 
 class PortfolioRouting extends Component {

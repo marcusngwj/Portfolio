@@ -17,8 +17,21 @@ class PortfolioScene extends Component {
       	  	<Cell columns={12}><SearchBar /></Cell>
       	  </Row>
       	  <Row className="content">
-      	  	{Object.entries(this.metaData.projects).map(([key, value]) => <Cell columns={4}><CardTheme title={value.title} subtitle={value.period} info={value.desc} img={value.image}/></Cell>)}
-      	  	{Object.entries(this.metaData.workExperiences).map(([key, value]) => <Cell columns={4}><CardTheme /></Cell>)}
+      	  	{Object.entries(this.metaData.projects).map(([key, value]) => <Cell columns={4}>
+                                                                            <CardTheme title={value.title} 
+                                                                                       subtitle={value.period} 
+                                                                                       info={value.desc} 
+                                                                                       img={value.image} 
+                                                                                       url={value.url}/>
+                                                                          </Cell>)}
+
+      	  	{Object.entries(this.metaData.workExperiences).map(([key, value]) => <Cell columns={4}>
+                                                                                   <CardTheme title={value.title} 
+                                                                                              subtitle={value.period} 
+                                                                                              info={value.desc} 
+                                                                                              img={value.image} 
+                                                                                              url={value.url}/>
+                                                                                 </Cell>)}
       	  </Row>
       	</Grid>
       </div>

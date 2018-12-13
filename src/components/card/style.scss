@@ -10,6 +10,11 @@
     @include mdc-elevation(5, $mdc-elevation-baseline-color,  0);
   }
 
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+  }
+
   .content__primary {
     padding: 1rem;
 
