@@ -16,6 +16,7 @@ class CardTheme extends Component {
         <Link to={this.props.url} className="card-link">
           <CardPrimaryContent>
             <CardMedia imageUrl={this.props.img} wide='false' />
+            <div className="divider"></div>
             <div className="content__primary">
               <h2 className="title">{this.props.title}</h2>
               <h3 className="subtitle">{this.props.subtitle}</h3>
