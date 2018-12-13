@@ -21,6 +21,10 @@ class NavBar extends Component {
     this.setState({anchorElement: element});
   }
 
+  closeMenu = () => {
+    this.setState({open: false, coordinates: null});
+  }
+
   render() {
     return (
       <div className="mdc-menu-surface--anchor" ref={this.setAnchorElement}>
@@ -37,14 +41,24 @@ class NavBar extends Component {
         <MenuSurface
           className="menu-list"
           open={this.state.open}
-          onClose={() => this.setState({open: false, coordinates: null})}
+          onClose={this.closeMenu}
           coordinates={this.state.coordinates}
         >
-          <Link to={Path.HOME} className="menu-item"><h4>Home</h4></Link>
-          <Link to={Path.ABOUT} className="menu-item"><h4>About</h4></Link>
-          <Link to={Path.PORTFOLIO} className="menu-item"><h4>Portfolio</h4></Link>
-          <a target='_blank' href={Path.RESUME} className="menu-item"><h4>Resume</h4></a>
-          <Link to={Path.CONTACT} className="menu-item"><h4>Contact Me</h4></Link>
+          <Link to={Path.HOME} className="menu-item" onClick={this.closeMenu}>
+            <h4>Home</h4>
+          </Link>
+          <Link to={Path.ABOUT} className="menu-item" onClick={this.closeMenu}>
+            <h4>About</h4>
+          </Link>
+          <Link to={Path.PORTFOLIO} className="menu-item" onClick={this.closeMenu}>
+            <h4>Portfolio</h4>
+          </Link>
+          <a target='_blank' href={Path.RESUME} className="menu-item" onClick={this.closeMenu}>
+            <h4>Resume</h4>
+          </a>
+          <Link to={Path.CONTACT} className="menu-item" onClick={this.closeMenu}>
+            <h4>Contact Me</h4>
+          </Link>
         </MenuSurface>
     </div>
     );
