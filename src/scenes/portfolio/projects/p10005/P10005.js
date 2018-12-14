@@ -4,6 +4,7 @@ import './style.scss';
 import {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import banner from './img/banner.png';
 import TagList from 'components/taglist/TagList';
+import ButtonIcon from 'components/button/ButtonIcon';
 import PortfolioMetadata from 'scenes/portfolio/PortfolioMetadata';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 
@@ -14,6 +15,10 @@ class P10005 extends Component {
       	<TopAppBarFixedAdjust>
 	      <img src={banner} className="banner" alt="banner_p10005"/>
 	      <TagList list={new PortfolioMetadata().getTagListFromProject('p10005')} />
+	      <div className="button-container">
+	        <ButtonIcon className="button-github" outlined={true} label='Github Repo' />
+	        <ButtonIcon className="button-github" outlined={true} label='Github Repo' />
+	      </div>
 	      <Grid>
 	        <Row>
 	      	  <Cell columns={2}></Cell>

@@ -2,6 +2,7 @@
 @import 'scenes/portfolio/projects/style.scss';
 @import '@material/react-layout-grid/index.scss';
 @import '@material/chips/mixins';
+@import 'components/button/style.scss';
 
 $COLOR_PROJECT_THEME: #407EB7;
 $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
@@ -10,6 +11,17 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
   @include selection(white, $COLOR_PROJECT_SELECTION_BACKGROUND);
   .banner {
   	@include project-banner;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem 2rem 0rem;
+
+    .button-github {
+      margin: 0rem 1rem;
+      @include button-icon($COLOR_PROJECT_THEME, transparent, $COLOR_PROJECT_THEME, white, $COLOR_PROJECT_THEME, transparent);
+    }
   }
 
   .tag {
