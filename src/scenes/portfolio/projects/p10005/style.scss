@@ -1,12 +1,23 @@
 @import 'theme/theme.scss';
 @import '@material/react-layout-grid/index.scss';
+@import '@material/chips/mixins';
+
+$COLOR_PROJECT_THEME: #407EB7;
 
 .p10005 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  
   .banner {
   	max-width: 100vw;
+  	pointer-events: none;
+  	@include user-select(none);
+  }
+
+  .content-container {
+  	padding-left: $PADDING_PORTFOLIO_BORDER;
+  	padding-right: $PADDING_PORTFOLIO_BORDER;
+  }
+
+  .tag {
+  	@include mdc-chip-fill-color($COLOR_PROJECT_THEME);
+  	@include mdc-chip-ink-color(white);
   }
 }

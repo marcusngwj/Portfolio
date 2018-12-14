@@ -15,3 +15,20 @@ $PADDING_PORTFOLIO_BORDER: 1rem;
     @content;
   }
 }
+
+@mixin selection($background) {
+  $prefixes: ("-moz-", "-webkit-", "-o-", "-ms-", "");
+  @each $prefix in $prefixes {
+    ::#{$prefix}selection {
+      background: $background;
+    }
+  }
+}
+
+@mixin user-select($value) {
+  -khtml-user-select: none;
+  -o-user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}

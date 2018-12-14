@@ -1,0 +1,14 @@
+@import 'theme/theme.scss';
+@import '@material/react-chips/index.scss';
+
+.taglist {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .tag {
+  	@include user-select(none);
+  	pointer-events: none;
+  }
+}
+

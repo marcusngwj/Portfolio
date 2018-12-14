@@ -19,58 +19,78 @@ class PortfolioMetadata  {
 
 	getProjects() {
 		return {
-			10005: {title: 'Crowdfunding Website',
-					desc: 'Database Project',
-					period: 'Aug 2018 - Nov 2018',
-					image: p10005,
-					url: PathPortfolio.P10005},
+			p10005: {title: 'Crowdfunding Website',
+					 desc: 'Database Project',
+					 period: 'Aug 2018 - Nov 2018',
+					 image: p10005,
+					 url: PathPortfolio.P10005,
+					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku']
+				    },
 
-			10004: {title: 'P2P File Transfer',
-					desc: 'Networking Project',
-					period: 'Aug 2018 - Nov 2018',
-					image: p10004,
-					url: PathPortfolio.P10004},
+			p10004: {title: 'P2P File Transfer',
+					 desc: 'Networking Project',
+					 period: 'Aug 2018 - Nov 2018',
+					 image: p10004,
+					 url: PathPortfolio.P10004,
+					 tags: []
+				    },
 
-			10003: {title: 'SpaXi',
-					desc: 'Static Program Analyzer',
-					period: 'Aug 2017 - Nov 2017',
-					image: p10003,
-					url: PathPortfolio.P10003},
+			p10003: {title: 'SpaXi',
+					 desc: 'Static Program Analyzer',
+					 period: 'Aug 2017 - Nov 2017',
+					 image: p10003,
+					 url: PathPortfolio.P10003,
+					 tags: []
+				    },
 
-			10002: {title: 'kboxLyricsBot',
-					desc: 'Telegram Bot to search for song lyrics',
-					period: 'Jan 2017',
-					image: p10002,
-					url: PathPortfolio.P10002},
+			p10002: {title: 'kboxLyricsBot',
+					 desc: 'Telegram Bot to search for song lyrics',
+					 period: 'Jan 2017',
+					 image: p10002,
+					 url: PathPortfolio.P10002,
+					 tags: []
+				    },
 
-			10001: {title: 'Taskell',
-					desc: 'Desktop Task Manager Application',
-					period: 'Aug 2016 - Nov 2016',
-					image: p10001,
-					url: PathPortfolio.P10001},
+			p10001: {title: 'Taskell',
+					 desc: 'Desktop Task Manager Application',
+					 period: 'Aug 2016 - Nov 2016',
+					 image: p10001,
+					 url: PathPortfolio.P10001,
+					 tags: []
+				    },
 
-			10000: {title: 'Bomb Squard',
-					desc: 'Multiplayer Android Mobile Quiz Game',
-					period: 'May 2016 - Aug 2016',
-					image: p10000,
-					url: PathPortfolio.P10000}
+			p10000: {title: 'Bomb Squard',
+					 desc: 'Multiplayer Android Mobile Quiz Game',
+					 period: 'May 2016 - Aug 2016',
+					 image: p10000,
+					 url: PathPortfolio.P10000,
+					 tags: []
+				    }
 		};
 	}
 
 	getWorkExperiences() {
 		return {
-			40001: {company: 'Micepad',
+			w40001: {company: 'Micepad',
 					desc: 'iOS Development Internship',
 					period: 'Jan 2018 - Jun 2018',
 					image: w40001,
-					url: PathPortfolio.W40001},
+					url: PathPortfolio.W40001,
+					tags: []
+				   },
 
-			40000: {company: 'Enviro-Hub Holdings Ltd',
-					desc: 'IT Helpdesk Internship',
-					period: 'May 2015 - Jul 2015',
-					image: w40000,
-					url: PathPortfolio.W40000}
+			w40000: {company: 'Enviro-Hub Holdings Ltd',
+					 desc: 'IT Helpdesk Internship',
+					 period: 'May 2015 - Jul 2015',
+					 image: w40000,
+					 url: PathPortfolio.W40000,
+					 tags: []
+				    }
 		};
+	}
+
+	getTagListFromProject($id) {
+		return this.projects[$id].tags;
 	}
 }
 
