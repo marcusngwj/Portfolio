@@ -1,4 +1,5 @@
 @import 'theme/theme.scss';
+@import 'scenes/portfolio/projects/style.scss';
 @import '@material/react-layout-grid/index.scss';
 @import '@material/chips/mixins';
 
@@ -11,12 +12,12 @@ $COLOR_PROJECT_THEME: #407EB7;
   	@include user-select(none);
   }
 
-  .content-container {
-  	@include portfolio-item-content-container;
-  }
-
   .tag {
   	@include mdc-chip-fill-color($COLOR_PROJECT_THEME);
   	@include mdc-chip-ink-color(white);
+  }
+
+  .content-container {
+  	@include project-content-container;
   }
 }

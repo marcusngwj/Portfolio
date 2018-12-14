@@ -54,7 +54,7 @@ class NavBar extends Component {
           <Link to={Path.PORTFOLIO} className="menu-item" onClick={this.closeMenu}>
             <h4>Portfolio</h4>
           </Link>
-          <a target='_blank' href={Path.RESUME} className="menu-item" onClick={this.closeMenu}>
+          <a target='_blank' href={Path.RESUME} rel='noopener noreferrer' className="menu-item" onClick={this.closeMenu}>
             <h4>Resume</h4>
           </a>
           <Link to={Path.CONTACT} className="menu-item" onClick={this.closeMenu}>

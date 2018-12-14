@@ -24,7 +24,7 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10005,
 					 url: PathPortfolio.P10005,
-					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku']
+					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku', 'Database', 'Web']
 				    },
 
 			p10004: {title: 'P2P File Transfer',

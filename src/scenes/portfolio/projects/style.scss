@@ -1,0 +1,12 @@
+@import 'theme/theme.scss';
+
+@mixin project-content-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@mixin project-content-title($color) {
+  font-size: 2em;
+  font-weight: 700;
+  color: $color;
+}
