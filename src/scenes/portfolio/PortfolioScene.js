@@ -25,7 +25,7 @@ class PortfolioScene extends Component {
       	  	<Cell columns={12}><SearchBar /></Cell>
       	  </Row>
       	  <Row className="content">
-      	  	{this.projects.map((arr) => <Cell columns={4}>
+      	  	{this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
                                           <CardTheme title={arr[1].title} 
                                                      subtitle={arr[1].period} 
                                                      info={arr[1].desc} 
@@ -33,7 +33,7 @@ class PortfolioScene extends Component {
                                                      url={arr[1].url} />
                                         </Cell>)}
 
-      	  	{this.workExperiences.map((arr) => <Cell columns={4}>
+      	  	{this.workExperiences.map((arr) => <Cell columns={4} key={arr[0]}>
                                                  <CardTheme title={arr[1].company} 
                                                             subtitle={arr[1].period} 
                                                             info={arr[1].desc} 

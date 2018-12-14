@@ -1,12 +1,19 @@
 @import 'theme/theme.scss';
 
-@mixin project-content-container {
-  padding-left: 1rem;
-  padding-right: 1rem;
+@mixin project-banner {
+  width: 100vw;
+  max-width:100%;
+  pointer-events: none;
+  @include user-select(none);
 }
 
 @mixin project-content-title($color) {
+  margin: 0;
   font-size: 2em;
   font-weight: 700;
   color: $color;
+}
+
+@mixin project-content-text {
+  margin: 0.5rem 0rem 0rem 0rem;
 }
