@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style.scss';
 
-import ButtonTheme from 'components/button/ButtonTheme';
 import HeaderBanner from './header_banner/HeaderBanner';
 
 class HomeScene extends Component {

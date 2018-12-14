@@ -11,7 +11,7 @@ class P10005 extends Component {
     return (
       <div className="p10005">
       	<TopAppBarFixedAdjust>
-	      <img src={banner} className="banner"/>
+	      <img src={banner} className="banner" alt="banner_p10005"/>
 	      <div className="content-container">
 	      	<TagList list={new PortfolioMetadata().getTagListFromProject('p10005')} />
 	      </div>

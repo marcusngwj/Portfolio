@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { Path } from 'Path';
 import TopAppBar from '@material/react-top-app-bar';
 import MaterialIcon from '@material/react-material-icon';
-import MenuSurface, { Corner } from '@material/react-menu-surface';
+import MenuSurface from '@material/react-menu-surface';
 
 import './style.scss';
 

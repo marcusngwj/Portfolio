@@ -8,7 +8,6 @@ $COLOR_BRAND_SECONDARY: #013d74;
 $COLOR_BRAND_SECONDARY_LIGHT: #4367a3;
 $COLOR_BRAND_SECONDARY_DARK: #001848;
 
-$PADDING_PORTFOLIO_BORDER: 1rem;
 
 @mixin breakpoint($size) {
   @include mdc-layout-grid-media-query_($size) {
@@ -31,4 +30,9 @@ $PADDING_PORTFOLIO_BORDER: 1rem;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
+}
+
+@mixin portfolio-item-content-container {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }

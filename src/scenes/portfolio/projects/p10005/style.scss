@@ -12,8 +12,7 @@ $COLOR_PROJECT_THEME: #407EB7;
   }
 
   .content-container {
-  	padding-left: $PADDING_PORTFOLIO_BORDER;
-  	padding-right: $PADDING_PORTFOLIO_BORDER;
+  	@include portfolio-item-content-container;
   }
 
   .tag {

@@ -7,10 +7,7 @@ class SearchBar extends Component {
   state = {value: 'Search'};
 
   clearInput = () => {
-    console.log(this.state.value);
-    if (this.state.value!='yay') {
-      this.setState({value: 'oop'});
-    }
+    this.setState({value: ''});
   }
 
   render() {
@@ -27,7 +24,7 @@ class SearchBar extends Component {
           trailingIcon={<MaterialIcon
                          icon='cancel'
                          className="button-cancel"
-                         onClick={() => this.setState({value: ''})} />}
+                         onClick={this.clearInput} />}
         >
           <Input className="input-area" id="search-bar-input"
             value={this.state.value}

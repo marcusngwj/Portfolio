@@ -1,12 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Card, {
-  CardPrimaryContent,
-  CardMedia,
-  CardActions,
-  CardActionButtons,
-  CardActionIcons
-} from "@material/react-card";
+import Card, { CardPrimaryContent, CardMedia } from "@material/react-card";
 import './style.scss';
 
 class CardTheme extends Component {
