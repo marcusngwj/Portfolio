@@ -7,7 +7,7 @@ class TagList extends Component {
   render() {
     return (
       <ChipSet className="taglist">       
-        {this.props.list.map((label) => <Chip id={label} label={label} className="tag"/>)}
+        {this.props.list.map((label) => <Chip id={label} key={label} label={label} className="tag"/>)}
       </ChipSet>
     );
   }
