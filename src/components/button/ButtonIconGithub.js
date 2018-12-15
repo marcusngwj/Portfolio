@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import './style.scss';
 import Button from '@material/react-button';
-import MaterialIcon from '@material/react-material-icon';
 
 class ButtonIconGithub extends Component {
   render() {
@@ -22,5 +21,3 @@ class ButtonIconGithub extends Component {
 }
 
 export default ButtonIconGithub;
-
-// icon={<MaterialIcon icon='search' />}

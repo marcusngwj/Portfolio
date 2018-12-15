@@ -99,7 +99,7 @@ class P10005 extends Component {
 		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
 	      	  <Cell columns={4} id="cell-er-diagram-img">
-	      	    <img src={ErDiagram} className="content-image-fill-grid"/>
+	      	    <img src={ErDiagram} className="content-image-fill-grid" alt='ER Diagram'/>
 		      </Cell>
 		      <Cell columns={4} id="cell-er-diagram-text">
 		        <p className="content-subtitle">ER Diagram</p>
@@ -130,8 +130,8 @@ class P10005 extends Component {
                                      slidesToShow: 1,
                                      slidesToScroll: 1,
                                      autoplay: true}}>
-		          <img src={Trigger1} />
-		          <img src={Trigger2} />
+		          <img src={Trigger1} alt='Trigger 1' />
+		          <img src={Trigger2} alt='Trigger 2' />
 		        </Carousel>
 		      </Cell>
 		      <Cell columns={2}></Cell>
@@ -146,7 +146,7 @@ class P10005 extends Component {
 		    <Row>
 	      	  <Cell columns={2}></Cell>
 	      	  <Cell columns={5}>
-		        <img src={PopupInvest} className="content-image-fill-grid"/>
+		        <img src={PopupInvest} className="content-image-fill-grid" alt='Invest Popup Gif'/>
 		      </Cell>
 		      <Cell columns={3} phoneColumns={4}>
 		        <p className="content-text">
