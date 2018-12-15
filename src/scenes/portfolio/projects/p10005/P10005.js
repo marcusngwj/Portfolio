@@ -148,7 +148,7 @@ class P10005 extends Component {
 	      	  <Cell columns={5}>
 		        <img src={PopupInvest} className="content-image-fill-grid"/>
 		      </Cell>
-		      <Cell columns={3}>
+		      <Cell columns={3} phoneColumns={4}>
 		        <p className="content-text">
 		          I also worked on some components on the front-end.
 		          Beside this pop-up form, I also worked on some front-end logic such as the search function to filter the projects for display.
