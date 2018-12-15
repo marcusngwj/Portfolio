@@ -98,10 +98,10 @@ class P10005 extends Component {
 		    </Row>
 		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
-	      	  <Cell columns={4}>
+	      	  <Cell columns={4} id="cell-er-diagram-img">
 	      	    <img src={ErDiagram} className="content-image-fill-grid"/>
 		      </Cell>
-		      <Cell columns={4}>
+		      <Cell columns={4} id="cell-er-diagram-text">
 		        <p className="content-subtitle">ER Diagram</p>
 		        <p className="content-text">
 		          This was the Entity-Relationship diagram I designed for our project.

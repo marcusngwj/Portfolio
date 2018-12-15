@@ -84,4 +84,16 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
   	}
   }
 
+  #cell-er-diagram-text {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(2);
+    }
+  }
+
+  #cell-er-diagram-img {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+  }
+
 }
