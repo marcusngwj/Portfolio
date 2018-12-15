@@ -16,8 +16,8 @@ class P10005 extends Component {
 	      <img src={banner} className="banner" alt="banner_p10005"/>
 	      <TagList list={new PortfolioMetadata().getTagListFromProject('p10005')} />
 	      <div className="button-container">
-	        <ButtonIcon className="button-github" outlined={true} label='Github Repo' />
-	        <ButtonIcon className="button-github" outlined={true} label='Github Repo' />
+	        <ButtonIcon className="button" outlined label='Project' />
+	        <ButtonIcon className="button" outlined label='Github' url='https://github.com/CS2102Group18/CS2102'/>
 	      </div>
 	      <Grid>
 	        <Row>
@@ -43,7 +43,7 @@ class P10005 extends Component {
 		            <li>Contributed to components used on the Front-end</li>
 		            <li>Wrote project report</li>
 		          </ul>
-		          As one of the project requirement was to host our website locally using Bitnami stacks, we did not host it on any remote server.
+		          As one of the project requirement was to host our website locally using Bitnami stacks and Apache server, we did not host it on any remote server.
 		          However, after the project ended, I hosted the website on Heroku while making use of their PostgreSQL database.
 		        </div>
 		      </Cell>

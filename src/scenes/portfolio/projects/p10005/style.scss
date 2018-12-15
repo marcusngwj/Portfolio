@@ -18,9 +18,9 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
     justify-content: center;
     margin: 3rem 0rem 2rem 0rem;
 
-    .button-github {
+    .button {
       margin: 0rem 1rem;
-      @include button-icon($COLOR_PROJECT_THEME, transparent, $COLOR_PROJECT_THEME, white, $COLOR_PROJECT_THEME, transparent);
+      @include button-icon-with-outline($COLOR_PROJECT_THEME, transparent, $COLOR_PROJECT_THEME, white, $COLOR_PROJECT_THEME, transparent);
     }
   }
 
