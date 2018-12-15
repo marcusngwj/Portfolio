@@ -95,7 +95,7 @@ class P10005 extends Component {
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>
-		    <Row>
+		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
 	      	  <Cell columns={4}>
 	      	    <img src={ErDiagram} className="content-image-fill-grid"/>
@@ -112,16 +112,13 @@ class P10005 extends Component {
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>
-		    <Row>
+		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
 	      	  <Cell columns={4}>
-	      	    <p className="content-subtitle">ER Diagram</p>
+	      	    <p className="content-subtitle">Triggers</p>
 		        <p className="content-text">
-		          This was the Entity-Relationship diagram I designed for our project.
-		          A member can represent either an entrepreneur or an investor.
-		          In the relational schema, I had combined the relation 'advertise' and 'project'.
-		          As any project can only be advertised by exactly 1 entrepreneur, there is an 1-to-1 relationship between the entrepreneur and his advertised project.
-		          This schema is in 3NF. 
+		          These triggers help to ensure the integrity of data in the database.
+		          They are automatically executed when a Data Manipulation Language (DML) event occurs in the database server.
 		        </p>
 		      </Cell>
 		      <Cell columns={4}>
