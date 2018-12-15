@@ -1,5 +1,5 @@
 @import 'theme/theme.scss';
-@import 'scenes/portfolio/projects/style.scss';
+@import 'scenes/portfolio/projects/mixins.scss';
 @import '@material/react-layout-grid/index.scss';
 @import 'components/taglist/mixins.scss';
 @import 'components/button/mixins.scss';
@@ -32,19 +32,28 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
     margin-top: 3rem;
   }
 
+  .content-image-fill-grid {
+    width: 100%;
+  }
+
   .content-title {
   	@include project-content-title($COLOR_PROJECT_THEME);
   }
 
+  .content-subtitle {
+    @include project-content-subtitle($COLOR_PROJECT_THEME);
+  }
+
   .content-text {
     @include project-content-text;
+    line-height: 1.5rem;
   }
 
   .problem-statement-container {
   	background-image: url(img/ps_background.png);
   	background-size: cover;
   	background-position: center;
-  	padding: 3rem 0rem;
+  	padding: 2.5rem 0rem 3rem 0rem;
   	margin-top: 3rem;
 
   	.problem-statement-title {
@@ -66,4 +75,5 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
   	  font-size: 2.5rem;
   	}
   }
+
 }
