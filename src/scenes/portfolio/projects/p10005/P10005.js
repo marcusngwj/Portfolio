@@ -15,6 +15,7 @@ import ErDiagram from './img/er_diagram.png';
 import Trigger1 from './img/trigger1.png';
 import Trigger2 from './img/trigger2.png';
 import Carousel from 'components/carousel/Carousel';
+import PopupInvest from './img/popup_invest.gif';
 
 class P10005 extends Component {
   render() {
@@ -134,13 +135,23 @@ class P10005 extends Component {
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>
-		    <Row className="content-grid-row">
-	      	  <Cell columns={2}></Cell>
+		    <Row id="row-title-ui">
+		      <Cell columns={2}></Cell>
 	      	  <Cell columns={8}>
-		        <p className="content-title">UI</p>
-		        <div className="content-text">
-		          lorem ipsum
-		        </div>
+	      	    <p className="content-title">User Interface</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={5}>
+		        <img src={PopupInvest} className="content-image-fill-grid"/>
+		      </Cell>
+		      <Cell columns={3}>
+		        <p className="content-text">
+		          I also worked on some components on the front-end.
+		          Beside this pop-up form, I also worked on some front-end logic such as the search function to filter the projects for display.
+		        </p>
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>
