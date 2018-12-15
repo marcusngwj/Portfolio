@@ -27,6 +27,11 @@ If the following error occurred, please reset the `SASS_PATH`:<br>
 - [Material Icons](https://github.com/material-components/material-components-web-react/tree/master/packages/material-icon)
 - [Color Tool](https://material.io/tools/color/#!/?view.left=0&view.right=0)
 
+#### SVG icons for popular brands - [Simple Icons](https://github.com/simple-icons/simple-icons)
+
+Navigate to icon directory and copy svg.<br>
+Example module: `src/components/button/ButtonIconGithub`
+
 
 ## Deployment
 

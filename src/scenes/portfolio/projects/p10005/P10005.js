@@ -4,9 +4,12 @@ import './style.scss';
 import {TopAppBarFixedAdjust} from '@material/react-top-app-bar';
 import banner from './img/banner.png';
 import TagList from 'components/taglist/TagList';
-import ButtonIcon from 'components/button/ButtonIcon';
 import PortfolioMetadata from 'scenes/portfolio/PortfolioMetadata';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
+
+import punchLogo from './img/punch_logo.png';
+import ButtonIconPng from 'components/button/ButtonIconPng';
+import ButtonIconGithub from 'components/button/ButtonIconGithub';
 
 class P10005 extends Component {
   render() {
@@ -16,8 +19,8 @@ class P10005 extends Component {
 	      <img src={banner} className="banner" alt="banner_p10005"/>
 	      <TagList list={new PortfolioMetadata().getTagListFromProject('p10005')} tagClassName="tag"/>
 	      <div className="button-container">
-	        <ButtonIcon className="button" outlined label='Project' url='https://cs2102-crowdfunding.herokuapp.com/' />
-	        <ButtonIcon className="button" outlined label='Github' url='https://github.com/CS2102Group18/CS2102' />
+	        <ButtonIconPng className="button" outlined label='Project' url='https://cs2102-crowdfunding.herokuapp.com/' icon={punchLogo} />
+	        <ButtonIconGithub className="button" outlined label='Github' url='https://github.com/CS2102Group18/CS2102' />
 	      </div>
 	      <Grid>
 	        <Row>

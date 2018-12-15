@@ -3,7 +3,7 @@ import './style.scss';
 import Button from '@material/react-button';
 import MaterialIcon from '@material/react-material-icon';
 
-class ButtonIcon extends Component {
+class ButtonIconPng extends Component {
   render() {
     return (
       <a target='_blank' rel='noopener noreferrer' href={this.props.url} className="button-icon-link">
@@ -11,8 +11,7 @@ class ButtonIcon extends Component {
           raised
           className={this.props.className}
           outlined={this.props.outlined}
-          icon={<MaterialIcon icon='search' />}
-          onClick={() => console.log('clicked!')}
+          icon={<img src={this.props.icon} />}
         >
           {this.props.label}
         </Button>
@@ -21,4 +20,4 @@ class ButtonIcon extends Component {
   }
 }
 
-export default ButtonIcon;
+export default ButtonIconPng;
