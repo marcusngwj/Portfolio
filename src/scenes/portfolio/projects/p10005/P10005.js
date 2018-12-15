@@ -124,6 +124,7 @@ class P10005 extends Component {
 		      </Cell>
 		      <Cell columns={4}>
 		        <Carousel settings={{dots: true,
+		        	                 arrows: false,
                                      infinite: true,
                                      speed: 500,
                                      slidesToShow: 1,
