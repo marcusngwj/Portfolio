@@ -1,8 +1,8 @@
 @import 'theme/theme.scss';
 @import 'scenes/portfolio/projects/style.scss';
 @import '@material/react-layout-grid/index.scss';
-@import '@material/chips/mixins';
-@import 'components/button/style.scss';
+@import 'components/taglist/mixins.scss';
+@import 'components/button/mixins.scss';
 
 $COLOR_PROJECT_THEME: #407EB7;
 $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
@@ -25,8 +25,7 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
   }
 
   .tag {
-  	@include mdc-chip-fill-color($COLOR_PROJECT_THEME);
-  	@include mdc-chip-ink-color(white);
+  	@include tag-set-color($COLOR_PROJECT_THEME, white);
   }
 
   .content-grid-row {

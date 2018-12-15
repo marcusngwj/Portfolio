@@ -1,0 +1,22 @@
+@import "@material/react-button/index.scss";
+@import "@material/button/mixins";
+
+@mixin button-icon-with-outline ($color, $fill, $outline, $hoverInk, $hoverFill, $hoverOutline) {
+  @include mdc-button-ink-color($color);
+  @include mdc-button-container-fill-color($fill);
+  @include mdc-button-outline-color($outline);
+  &:hover {
+    @include mdc-button-ink-color($hoverInk);
+    @include mdc-button-container-fill-color($hoverFill);
+    @include mdc-button-outline-color($hoverOutline);
+  }
+}
+
+@mixin button-icon-no-outline ($color, $fill, $hoverInk, $hoverFill) {
+  @include mdc-button-ink-color($color);
+  @include mdc-button-container-fill-color($fill);
+  &:hover {
+    @include mdc-button-ink-color($hoverInk);
+    @include mdc-button-container-fill-color($hoverFill);
+  }
+}

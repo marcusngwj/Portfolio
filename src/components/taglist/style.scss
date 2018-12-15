@@ -1,12 +1,12 @@
 @import 'theme/theme.scss';
 @import '@material/react-chips/index.scss';
 
-.taglist {
+.taglist-main-class {
   display: flex;
   align-items: center;
   justify-content: center;
 
-  .tag {
+  .tag-main-class {
   	@include user-select(none);
   	pointer-events: none;
   }

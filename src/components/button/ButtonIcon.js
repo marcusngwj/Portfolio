@@ -6,7 +6,7 @@ import MaterialIcon from '@material/react-material-icon';
 class ButtonIcon extends Component {
   render() {
     return (
-      <a target='_blank' rel='noopener noreferrer' href={this.props.url} className="button-link">
+      <a target='_blank' rel='noopener noreferrer' href={this.props.url} className="button-icon-link">
         <Button
           raised
           className={this.props.className}
