@@ -12,6 +12,9 @@ import ButtonIconPng from 'components/button/ButtonIconPng';
 import ButtonIconGithub from 'components/button/ButtonIconGithub';
 
 import ErDiagram from './img/er_diagram.png';
+import Trigger1 from './img/trigger1.png';
+import Trigger2 from './img/trigger2.png';
+import Carousel from 'components/carousel/Carousel';
 
 class P10005 extends Component {
   render() {
@@ -106,6 +109,31 @@ class P10005 extends Component {
 		          As any project can only be advertised by exactly 1 entrepreneur, there is an 1-to-1 relationship between the entrepreneur and his advertised project.
 		          This schema is in 3NF. 
 		        </p>
+		      </Cell>
+		      <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={4}>
+	      	    <p className="content-subtitle">ER Diagram</p>
+		        <p className="content-text">
+		          This was the Entity-Relationship diagram I designed for our project.
+		          A member can represent either an entrepreneur or an investor.
+		          In the relational schema, I had combined the relation 'advertise' and 'project'.
+		          As any project can only be advertised by exactly 1 entrepreneur, there is an 1-to-1 relationship between the entrepreneur and his advertised project.
+		          This schema is in 3NF. 
+		        </p>
+		      </Cell>
+		      <Cell columns={4}>
+		        <Carousel settings={{dots: true,
+                                     infinite: true,
+                                     speed: 500,
+                                     slidesToShow: 1,
+                                     slidesToScroll: 1,
+                                     autoplay: true}}>
+		          <img src={Trigger1} />
+		          <img src={Trigger2} />
+		        </Carousel>
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>

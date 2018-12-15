@@ -61,7 +61,7 @@ class NavBar extends Component {
             <h4>Contact Me</h4>
           </Link>
         </MenuSurface>
-    </div>
+      </div>
     );
   }
 }

@@ -32,6 +32,10 @@ If the following error occurred, please reset the `SASS_PATH`:<br>
 Navigate to icon directory and copy svg.<br>
 Example module: `src/components/button/ButtonIconGithub`
 
+#### [Carousel](https://github.com/akiran/react-slick)
+
+Highly customisable slider
+
 
 ## Deployment
 
