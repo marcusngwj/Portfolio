@@ -98,10 +98,10 @@ class P10005 extends Component {
 		    </Row>
 		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
-	      	  <Cell columns={4} id="cell-er-diagram-img">
+	      	  <Cell columns={4} tabletColumns={8} id="cell-er-diagram-img">
 	      	    <img src={ErDiagram} className="content-image-fill-grid" alt='ER Diagram'/>
 		      </Cell>
-		      <Cell columns={4} id="cell-er-diagram-text">
+		      <Cell columns={4} tabletColumns={8} id="cell-er-diagram-text">
 		        <p className="content-subtitle">ER Diagram</p>
 		        <p className="content-text">
 		          This was the Entity-Relationship diagram I designed for our project.
@@ -115,14 +115,14 @@ class P10005 extends Component {
 		    </Row>
 		    <Row className="content-grid-subrow">
 	      	  <Cell columns={2}></Cell>
-	      	  <Cell columns={4}>
+	      	  <Cell columns={4} tabletColumns={8}>
 	      	    <p className="content-subtitle">Triggers</p>
 		        <p className="content-text">
 		          These triggers help to ensure the integrity of data in the database.
 		          They are automatically executed when a Data Manipulation Language (DML) event occurs in the database server.
 		        </p>
 		      </Cell>
-		      <Cell columns={4}>
+		      <Cell columns={4} tabletColumns={8}>
 		        <Carousel settings={{dots: true,
 		        	                 arrows: false,
                                      infinite: true,
@@ -145,10 +145,10 @@ class P10005 extends Component {
 		    </Row>
 		    <Row>
 	      	  <Cell columns={2}></Cell>
-	      	  <Cell columns={5}>
+	      	  <Cell columns={5} tabletColumns={8}>
 		        <img src={PopupInvest} className="content-image-fill-grid" alt='Invest Popup Gif'/>
 		      </Cell>
-		      <Cell columns={3} phoneColumns={4}>
+		      <Cell columns={3} phoneColumns={4} tabletColumns={8}>
 		        <p className="content-text">
 		          I also worked on some components on the front-end.
 		          Beside this pop-up form, I also worked on some front-end logic such as the search function to filter the projects for display.

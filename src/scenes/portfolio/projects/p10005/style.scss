@@ -88,10 +88,18 @@ $COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
     @include breakpoint(phone) {
       @include mdc-layout-grid-cell-order(2);
     }
+
+    @include breakpoint(tablet) {
+      @include mdc-layout-grid-cell-order(2);
+    }
   }
 
   #cell-er-diagram-img {
     @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+
+    @include breakpoint(tablet) {
       @include mdc-layout-grid-cell-order(3);
     }
   }
