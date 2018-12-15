@@ -146,7 +146,7 @@ class P10005 extends Component {
 		    <Row>
 	      	  <Cell columns={2}></Cell>
 	      	  <Cell columns={5} tabletColumns={8}>
-		        <img src={PopupInvest} className="content-image-fill-grid" alt='Invest Popup Gif'/>
+		        <img src={PopupInvest} className="content-image-fill-grid" id="img-popup-invest" alt='Invest Popup Gif'/>
 		      </Cell>
 		      <Cell columns={3} phoneColumns={4} tabletColumns={8}>
 		        <p className="content-text">
