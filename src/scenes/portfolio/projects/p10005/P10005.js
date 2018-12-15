@@ -11,6 +11,8 @@ import punchLogo from './img/punch_logo.png';
 import ButtonIconPng from 'components/button/ButtonIconPng';
 import ButtonIconGithub from 'components/button/ButtonIconGithub';
 
+import ErDiagram from './img/er_diagram.png';
+
 class P10005 extends Component {
   render() {
     return (
@@ -30,7 +32,7 @@ class P10005 extends Component {
 		        <p className="content-text">
 		          A database project designed for module CS2102, an introductory module for database systems in NUS, over the course of 13 weeks.
 		          We were assigned different topics and were required to work in teams of 4.
-		          My group was assigned to design a crowdfunding website.
+		          My group was assigned to design a crowdfunding web application.
 		        </p>
 		      </Cell>
 		      <Cell columns={2}></Cell>
@@ -78,6 +80,46 @@ class P10005 extends Component {
 		  	  </Row>
 		  	</Grid>
 		  </div>
+		  <Grid>
+	        <Row className="content-grid-row">
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+		        <p className="content-title">Database</p>
+		        <p className="content-text">
+		          My primary responsibility for this project was to create and maintain the database.
+		          I am glad that I had the opportunity to design the schema, as well as various triggers. 
+		        </p>
+		      </Cell>
+		      <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={4}>
+	      	    <img src={ErDiagram} className="content-image-fill-grid"/>
+		      </Cell>
+		      <Cell columns={4}>
+		        <p className="content-subtitle">ER Diagram</p>
+		        <p className="content-text">
+		          This was the Entity-Relationship diagram I designed for our project.
+		          A member can represent either an entrepreneur or an investor.
+		          In the relational schema, I had combined the relation 'advertise' and 'project'.
+		          As any project can only be advertised by exactly 1 entrepreneur, there is an 1-to-1 relationship between the entrepreneur and his advertised project.
+		          This schema is in 3NF. 
+		        </p>
+		      </Cell>
+		      <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+		        <p className="content-title">UI</p>
+		        <div className="content-text">
+		          lorem ipsum
+		        </div>
+		      </Cell>
+		      <Cell columns={2}></Cell>
+		    </Row>
+		  </Grid>
       	</TopAppBarFixedAdjust>
       </div>
     );
