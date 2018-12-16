@@ -73,3 +73,7 @@ This command should be ran from the project's root directory, creating a `fireba
 #### `firebase deploy`
 
 This command deploys a release to the Firebae project's default Hosting site.
+
+### Monitoring site performance in search result
+
+- [Guide to use Google Search Console](https://www.crazyegg.com/blog/guides/google-search-console/)
