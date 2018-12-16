@@ -76,4 +76,5 @@ This command deploys a release to the Firebae project's default Hosting site.
 
 ### Monitoring site performance in search result
 
+- [HTML meta tags](https://searchenginewatch.com/2018/06/15/a-guide-to-html-and-meta-tags-in-2018/)
 - [Guide to use Google Search Console](https://www.crazyegg.com/blog/guides/google-search-console/)
