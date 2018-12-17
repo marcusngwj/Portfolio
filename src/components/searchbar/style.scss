@@ -4,32 +4,6 @@
 @import '@material/chips/variables';
 
 .searchbar {
-  width: 100%;
-
-  .container {
-  	border-style: solid;
-  	@include mdc-text-field-textarea-stroke-color($COLOR_BRAND_PRIMARY_LIGHT);
-
-  	.icon-search {
-	  left: 9px;
-	}
-	  
-	.button-cancel {
-	  pointer-events: auto;	// So that it will be clickable
-	}
-
-	.input-area {
-	  margin-left: 40px;
-	  padding-right: 5.5rem;
-	  border-bottom: transparent;
-	  @include mdc-text-field-fullwidth-bottom-line-color(transparent);
-	  @include mdc-text-field-caret-color($COLOR_BRAND_PRIMARY_DARK);
-	}
-
-  }  
-}
-
-.xxx {
   .searchbar-border-container {
     border-style: solid;
     border-color: $COLOR_BRAND_PRIMARY_LIGHT;
@@ -38,10 +12,6 @@
     display:flex;  
     flex-wrap: wrap;
     align-items: center;
-
-    .searchbar-chipset {
-      
-    }
 
     .searchbar-content-container {
       display:flex;     

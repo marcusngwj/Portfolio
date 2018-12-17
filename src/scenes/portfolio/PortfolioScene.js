@@ -3,10 +3,9 @@ import './style.scss';
 
 import PortfolioMetadata from './PortfolioMetadata.js';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
-import SearchBar from 'components/searchbar/SearchBar';
 import CardTheme from 'components/card/CardTheme';
 
-import XXX from 'components/searchbar/XXX';
+import SearchBar from 'components/searchbar/SearchBar';
 
 class PortfolioScene extends Component {
   metaData = new PortfolioMetadata();
@@ -24,7 +23,7 @@ class PortfolioScene extends Component {
       <div className="portfolio-scene">
       	<Grid className="portfolio-grid">
           <Row>
-            <Cell columns={12}><XXX placeholder='Search for things'/></Cell>
+            <Cell columns={12}><SearchBar placeholder='Search for things'/></Cell>
           </Row>
           <Row className="content">
             {this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
