@@ -24,7 +24,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10005,
 					 url: PathPortfolio.P10005,
-					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku', 'Database', 'Web']
+					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku', 'Database'],
+					 keywords: ['full stack', 'front end', 'backend']
 				    },
 
 			p10004: {title: 'P2P File Transfer',
@@ -32,7 +33,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10004,
 					 url: PathPortfolio.P10004,
-					 tags: []
+					 tags: ['Java', 'Network Protocol', 'Digital Ocean'],
+					 keywords: []
 				    },
 
 			p10003: {title: 'SpaXi',
@@ -40,7 +42,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2017 - Nov 2017',
 					 image: p10003,
 					 url: PathPortfolio.P10003,
-					 tags: []
+					 tags: ['C++', 'Python', 'Bash Scripting', 'VBScript', 'SPA'],
+					 keywords: ['Heroku', 'React', 'reactjs', 'HTML', 'CSS', 'SCSS', 'JavaScript']
 				    },
 
 			p10002: {title: 'kboxLyricsBot',
@@ -48,7 +51,8 @@ class PortfolioMetadata  {
 					 period: 'Jan 2017',
 					 image: p10002,
 					 url: PathPortfolio.P10002,
-					 tags: []
+					 tags: ['Python', 'Web Scraping'],
+					 keywords: ['Beautiful Soup', 'Genius API', 'Heroku']
 				    },
 
 			p10001: {title: 'Taskell',
@@ -56,7 +60,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2016 - Nov 2016',
 					 image: p10001,
 					 url: PathPortfolio.P10001,
-					 tags: []
+					 tags: ['Java'],
+					 keywords: ['paperplane', 'HTML', 'CSS', 'Web']
 				    },
 
 			p10000: {title: 'Bomb Squard',
@@ -64,7 +69,8 @@ class PortfolioMetadata  {
 					 period: 'May 2016 - Aug 2016',
 					 image: p10000,
 					 url: PathPortfolio.P10000,
-					 tags: []
+					 tags: ['Java', 'PHP', 'MySQLi', 'Android', 'Mobile Development', 'Database'],
+					 keywords: ['full stack']
 				    }
 		};
 	}
@@ -72,19 +78,21 @@ class PortfolioMetadata  {
 	getWorkExperiences() {
 		return {
 			w40001: {company: 'Micepad',
-					desc: 'iOS Development Internship',
-					period: 'Jan 2018 - Jun 2018',
-					image: w40001,
-					url: PathPortfolio.W40001,
-					tags: []
-				   },
+					 desc: 'iOS Development Internship',
+					 period: 'Jan 2018 - Jun 2018',
+					 image: w40001,
+					 url: PathPortfolio.W40001,
+					 tags: ['Objective-C', 'iOS', 'Mobile Development', 'Front-End'],
+					 keywords: ['objective c', 'obj c', 'iPhone', 'iPad']
+				    },
 
 			w40000: {company: 'Enviro-Hub Holdings Ltd',
 					 desc: 'IT Helpdesk Internship',
 					 period: 'May 2015 - Jul 2015',
 					 image: w40000,
 					 url: PathPortfolio.W40000,
-					 tags: []
+					 tags: [],
+					 keywords: []
 				    }
 		};
 	}
