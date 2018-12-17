@@ -22,12 +22,12 @@ class PortfolioScene extends Component {
   render() {
     return (
       <div className="portfolio-scene">
-      	<Grid>
-      	  <Row>
+      	<Grid className="portfolio-grid">
+          <Row>
             <Cell columns={12}><XXX placeholder='Search for things'/></Cell>
-      	  </Row>
-      	  <Row className="content">
-      	  	{this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
+          </Row>
+          <Row className="content">
+            {this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
                                           <CardTheme title={arr[1].title} 
                                                      subtitle={arr[1].period} 
                                                      info={arr[1].desc} 
@@ -35,14 +35,14 @@ class PortfolioScene extends Component {
                                                      url={arr[1].url} />
                                         </Cell>)}
 
-      	  	{this.workExperiences.map((arr) => <Cell columns={4} key={arr[0]}>
+            {this.workExperiences.map((arr) => <Cell columns={4} key={arr[0]}>
                                                  <CardTheme title={arr[1].company} 
                                                             subtitle={arr[1].period} 
                                                             info={arr[1].desc} 
                                                             img={arr[1].image} 
                                                             url={arr[1].url}/>
                                                </Cell>)}
-      	  </Row>
+          </Row>
       	</Grid>
       </div>
     );

@@ -30,25 +30,29 @@
 }
 
 .xxx {
-  .searchbar-container {
+  .searchbar-border-container {
     border-style: solid;
     border-color: $COLOR_BRAND_PRIMARY_LIGHT;
     border-radius: 10px;
-    display: flex;
+    min-height: $mdc-chip-height-default+$mdc-chip-vertical-padding*2;
+    display:flex;  
     flex-wrap: wrap;
-
+    align-items: center;
 
     .searchbar-chipset {
       
     }
 
-    .searchbar-input-container {
-      display:flex;
-      padding: $mdc-chip-vertical-padding $mdc-chip-horizontal-padding;
+    .searchbar-content-container {
+      display:flex;     
+      flex-wrap: wrap;
+      align-items: center;
+      width: 100%;
 
       .input-area {
 	    border: none;
 	    outline: none;
+	    padding: $mdc-chip-vertical-padding $mdc-chip-horizontal-padding;
 	  }
     }
   }

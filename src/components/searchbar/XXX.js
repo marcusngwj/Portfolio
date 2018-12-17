@@ -45,15 +45,16 @@ class XXX extends Component {
   render() {
     return (
       <div className="xxx">
-        <div className="searchbar-container">
-          <ChipSet className="searchbar-chipset">
-            {this.state.filter.map((label) => <Chip label={label}
-                                                    id={label} 
-                                                    key={label} 
-                                                    removeIcon={<MaterialIcon icon='cancel' />} />)}
-          </ChipSet>
-          <div className="searchbar-input-container">
+        <div className="searchbar-border-container">
+          <div className="searchbar-content-container">
+            <ChipSet className="searchbar-chipset">
+              {this.state.filter.map((label) => <Chip label={label}
+                                                      id={label} 
+                                                      key={label} 
+                                                      removeIcon={<MaterialIcon icon='cancel' />} />)}
+            </ChipSet>
             <input className="input-area"
+              type='text'
               placeholder={this.props.placeholder}
               value={this.state.value}
               onChange={(e) => this.setState({value: e.target.value})}
