@@ -1,6 +1,7 @@
 @import 'theme/theme.scss';
 @import '@material/react-text-field/index.scss';
 @import '@material/textfield/mixins';
+@import '@material/chips/variables';
 
 .searchbar {
   width: 100%;
@@ -26,4 +27,29 @@
 	}
 
   }  
+}
+
+.xxx {
+  .searchbar-container {
+    border-style: solid;
+    border-color: $COLOR_BRAND_PRIMARY_LIGHT;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+
+
+    .searchbar-chipset {
+      
+    }
+
+    .searchbar-input-container {
+      display:flex;
+      padding: $mdc-chip-vertical-padding $mdc-chip-horizontal-padding;
+
+      .input-area {
+	    border: none;
+	    outline: none;
+	  }
+    }
+  }
 }

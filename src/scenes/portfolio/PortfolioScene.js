@@ -6,6 +6,8 @@ import {Cell, Grid, Row} from '@material/react-layout-grid';
 import SearchBar from 'components/searchbar/SearchBar';
 import CardTheme from 'components/card/CardTheme';
 
+import XXX from 'components/searchbar/XXX';
+
 class PortfolioScene extends Component {
   metaData = new PortfolioMetadata();
   projects = this.getArrayOrderByKeyDescending(this.metaData.projects);
@@ -22,7 +24,7 @@ class PortfolioScene extends Component {
       <div className="portfolio-scene">
       	<Grid>
       	  <Row>
-      	  	<Cell columns={12}><SearchBar /></Cell>
+            <Cell columns={12}><XXX placeholder='Search for things'/></Cell>
       	  </Row>
       	  <Row className="content">
       	  	{this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
