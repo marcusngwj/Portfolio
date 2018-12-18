@@ -6,7 +6,7 @@ import {Cell, Grid, Row} from '@material/react-layout-grid';
 
 import CardTheme from 'components/card/CardTheme';
 
-import XXX from 'components/searchbar/XXX';
+import SearchBar from 'components/searchbar/SearchBar';
 import { Skill, Tool, Exp, Misc } from './Keywords';
 
 class PortfolioScene extends Component {
@@ -36,7 +36,7 @@ class PortfolioScene extends Component {
       	<Grid>
       	  <Row>
       	  	<Cell columns={12}>
-              <XXX placeholder='Search using skills, tools or experiences' suggestions={this.getSuggestions()}/>
+              <SearchBar placeholder='Search using skills, tools or experiences' suggestions={this.getSuggestions()}/>
             </Cell>
       	  </Row>
       	  <Row className="content">

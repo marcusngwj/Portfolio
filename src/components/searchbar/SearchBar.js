@@ -1,36 +1,25 @@
 import React, { Component } from 'react';
 import './style.scss';
-import TextField, { HelperText, Input } from '@material/react-text-field';
-import MaterialIcon from '@material/react-material-icon';
+
+import Chips from 'react-chips';
+
 
 class SearchBar extends Component {
-  state = {value: 'Search'};
+  state = {chosenKeywords: []};
 
-  clearInput = () => {
-    this.setState({value: ''});
+  handleChange = (e) => {
+    this.setState({chosenKeywords: e});
   }
 
   render() {
     return (
       <div className="searchbar">
-      	<TextField
-          className="container"
-      	  label='school'
-          helperText={<HelperText>Eg. Skills / Project Titles </HelperText>}
-          fullWidth={true}
-          leadingIcon={<MaterialIcon
-                        icon='search'
-                        className="icon-search" />}
-          trailingIcon={<MaterialIcon
-                         icon='cancel'
-                         className="button-cancel"
-                         onClick={this.clearInput} />}
-        >
-          <Input className="input-area" id="search-bar-input"
-            value={this.state.value}
-            onChange={(e) => this.setState({value: e.target.value})}
-          />
-        </TextField>
+      	<Chips {...this.props}
+          value={this.state.chosenKeywords}
+          placeholder={this.props.placeholder}
+          onChange={this.handleChange}
+          suggestions={this.props.suggestions}
+        />
       </div>
     );
   }
