@@ -1,36 +1,33 @@
 import React, { Component } from 'react';
 import './style.scss';
-import TextField, { HelperText, Input } from '@material/react-text-field';
-import MaterialIcon from '@material/react-material-icon';
+
+import Chips from 'react-chips';
 
 class SearchBar extends Component {
-  state = {value: 'Search'};
+  state = {
+    displayHelper: false
+  }
 
-  clearInput = () => {
-    this.setState({value: ''});
+  handleFocus = () => {
+    this.setState({displayHelper: true});
+  }
+
+  handleBlur = () => {
+    this.setState({displayHelper: false});
   }
 
   render() {
     return (
-      <div className="searchbar">
-      	<TextField
-          className="container"
-      	  label='school'
-          helperText={<HelperText>Eg. Skills / Project Titles </HelperText>}
-          fullWidth={true}
-          leadingIcon={<MaterialIcon
-                        icon='search'
-                        className="icon-search" />}
-          trailingIcon={<MaterialIcon
-                         icon='cancel'
-                         className="button-cancel"
-                         onClick={this.clearInput} />}
-        >
-          <Input className="input-area" id="search-bar-input"
-            value={this.state.value}
-            onChange={(e) => this.setState({value: e.target.value})}
-          />
-        </TextField>
+      <div className="searchbar" onFocus={this.handleFocus} onBlur={this.handleBlur}>
+      	<Chips
+          value={this.props.value}
+          placeholder={this.props.placeholder}
+          onChange={this.props.onChange}
+          suggestions={this.props.suggestions}
+        />
+        <div className={"helper-container " + (this.state.displayHelper ? "showHelper" : "hideHelper")}>
+          <p className="text">{this.props.helperText}</p>
+        </div>
       </div>
     );
   }

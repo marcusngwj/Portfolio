@@ -1,4 +1,5 @@
 import { PathPortfolio } from 'Path';
+import { Skill, Tool, Exp, Misc } from './Keywords';
 
 import defaultImg from './img/default.png';
 import p10000 from './img/p10000.png';
@@ -24,8 +25,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10005,
 					 url: PathPortfolio.P10005,
-					 tags: ['SQL', 'PostgreSQL', 'HTML', 'PHP', 'JavaScript', 'phpPgAdmin', 'Bitnami', 'DBeaver', 'Heroku', 'Database'],
-					 keywords: ['full stack', 'front end', 'backend']
+					 tags: [Skill.SQL, Skill.POSTGRESQL, Skill.HTML, Skill.PHP, Skill.JAVASCRIPT, Tool.PHPPGADMIN, Tool.BITNAMI, Tool.DBEAVER, Tool.HEROKU, Exp.DATABASE],
+					 keywords: [Exp.FULL_STACK, Exp.FRONT_END, Exp.BACK_END]
 				    },
 
 			p10004: {title: 'P2P File Transfer',
@@ -33,7 +34,7 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10004,
 					 url: PathPortfolio.P10004,
-					 tags: ['Java', 'Network Protocol', 'Digital Ocean'],
+					 tags: [Skill.JAVA, Tool.DIGITAL_OCEAN, Misc.NETWORK_PROTOCOL],
 					 keywords: []
 				    },
 
@@ -42,8 +43,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2017 - Nov 2017',
 					 image: p10003,
 					 url: PathPortfolio.P10003,
-					 tags: ['C++', 'Python', 'Bash Scripting', 'VBScript', 'SPA'],
-					 keywords: ['Heroku', 'React', 'reactjs', 'HTML', 'CSS', 'SCSS', 'JavaScript']
+					 tags: [Skill.CPP, Skill.PYTHON, Skill.BASH, Skill.VBSCRIPT, Misc.SPA],
+					 keywords: [Tool.HEROKU, Skill.REACT, Skill.HTML, Skill.CSS, Skill.SCSS, Skill.JAVASCRIPT]
 				    },
 
 			p10002: {title: 'kboxLyricsBot',
@@ -51,8 +52,8 @@ class PortfolioMetadata  {
 					 period: 'Jan 2017',
 					 image: p10002,
 					 url: PathPortfolio.P10002,
-					 tags: ['Python', 'Web Scraping'],
-					 keywords: ['Beautiful Soup', 'Genius API', 'Heroku']
+					 tags: [Skill.PYTHON, Misc.WEB_SCRAP, Tool.HEROKU, Misc.BEAUTIFUL_SOUP, Misc.GENIUS],
+					 keywords: []
 				    },
 
 			p10001: {title: 'Taskell',
@@ -60,8 +61,8 @@ class PortfolioMetadata  {
 					 period: 'Aug 2016 - Nov 2016',
 					 image: p10001,
 					 url: PathPortfolio.P10001,
-					 tags: ['Java'],
-					 keywords: ['paperplane', 'HTML', 'CSS', 'Web']
+					 tags: [Skill.JAVA, Tool.ECLIPSE],
+					 keywords: [Tool.PAPERPLANE, Skill.HTML, Skill.CSS, Exp.WEB]
 				    },
 
 			p10000: {title: 'Bomb Squard',
@@ -69,8 +70,8 @@ class PortfolioMetadata  {
 					 period: 'May 2016 - Aug 2016',
 					 image: p10000,
 					 url: PathPortfolio.P10000,
-					 tags: ['Java', 'PHP', 'MySQLi', 'Android', 'Mobile Development', 'Database'],
-					 keywords: ['full stack']
+					 tags: [Skill.JAVA, Skill.PHP, Skill.MYSQLI, Exp.ANDROID, Exp.MOBILE, Exp.DATABASE, Exp.FULL_STACK],
+					 keywords: []
 				    }
 		};
 	}
@@ -82,8 +83,8 @@ class PortfolioMetadata  {
 					 period: 'Jan 2018 - Jun 2018',
 					 image: w40001,
 					 url: PathPortfolio.W40001,
-					 tags: ['Objective-C', 'iOS', 'Mobile Development', 'Front-End'],
-					 keywords: ['objective c', 'obj c', 'iPhone', 'iPad']
+					 tags: [Skill.OBJC, Exp.IOS, Exp.MOBILE, Exp.FRONT_END, Misc.IPHONE, Misc.IPAD],
+					 keywords: []
 				    },
 
 			w40000: {company: 'Enviro-Hub Holdings Ltd',

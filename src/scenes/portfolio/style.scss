@@ -5,8 +5,12 @@
 	display: flex;
 	justify-content: center;
 
-	.content {
-	  margin-top: 1rem;
-	  margin-bottom: 1rem;
+	.portfolio-grid {
+	  width: 90%;
+
+	  .content {
+	    margin-top: 1rem;
+	    margin-bottom: 1rem;
+	  }
 	}
 }
