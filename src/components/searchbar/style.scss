@@ -1,8 +1,23 @@
 @import 'theme/theme.scss';
 
-
-.xxx {
+.searchbar {
   width: 100%;
 
+  .helper-container {
+    .text {
+      margin: 0.25rem 0rem 0rem 0rem;
+      padding: 0;
+      color: #aeaeae;
+      font-size: 0.75rem;
+    }
+  }
+
+  .showHelper {
+    visibility: visible;
+  }
+
+  .hideHelper {
+    visibility: hidden;
+  }
   
 }

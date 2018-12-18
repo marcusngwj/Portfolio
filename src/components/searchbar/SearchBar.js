@@ -3,23 +3,31 @@ import './style.scss';
 
 import Chips from 'react-chips';
 
-
 class SearchBar extends Component {
-  state = {chosenKeywords: []};
+  state = {
+    displayHelper: false
+  }
 
-  handleChange = (e) => {
-    this.setState({chosenKeywords: e});
+  handleFocus = () => {
+    this.setState({displayHelper: true});
+  }
+
+  handleBlur = () => {
+    this.setState({displayHelper: false});
   }
 
   render() {
     return (
-      <div className="searchbar">
-      	<Chips {...this.props}
-          value={this.state.chosenKeywords}
+      <div className="searchbar" onFocus={this.handleFocus} onBlur={this.handleBlur}>
+      	<Chips
+          value={this.props.value}
           placeholder={this.props.placeholder}
-          onChange={this.handleChange}
+          onChange={this.props.onChange}
           suggestions={this.props.suggestions}
         />
+        <div className={"helper-container " + (this.state.displayHelper ? "showHelper" : "hideHelper")}>
+          <p className="text">{this.props.helperText}</p>
+        </div>
       </div>
     );
   }

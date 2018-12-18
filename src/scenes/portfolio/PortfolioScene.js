@@ -10,6 +10,10 @@ import SearchBar from 'components/searchbar/SearchBar';
 import { Skill, Tool, Exp, Misc } from './Keywords';
 
 class PortfolioScene extends Component {
+  state = {
+    chosenKeywords: []
+  };
+
   metaData = new PortfolioMetadata();
   projects = this.getArrayOrderByKeyDescending(this.metaData.projects);
   workExperiences = this.getArrayOrderByKeyDescending(this.metaData.workExperiences);
@@ -30,13 +34,22 @@ class PortfolioScene extends Component {
     return items;
   };
 
+  handleChange = (e) => {
+    console.log(e);
+    this.setState({chosenKeywords: e});
+  }
+
   render() {
     return (
       <div className="portfolio-scene">
       	<Grid>
       	  <Row>
       	  	<Cell columns={12}>
-              <SearchBar placeholder='Search using skills, tools or experiences' suggestions={this.getSuggestions()}/>
+              <SearchBar placeholder='Search using skills, tools or experiences' 
+                         helperText="Eg. Java / React / Mobile Development"
+                         suggestions={this.getSuggestions()} 
+                         value={this.state.chosenKeywords}
+                         onChange={this.handleChange} />
             </Cell>
       	  </Row>
       	  <Row className="content">
