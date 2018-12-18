@@ -34,7 +34,6 @@ class PortfolioScene extends Component {
   };
 
   handleChange = (e) => {
-    console.log(e);
     this.setState({chosenKeywords: e});
   }
 
@@ -45,7 +44,6 @@ class PortfolioScene extends Component {
                                                  img={value.image} 
                                                  url={value.url} />
                                     </Cell>);
-
 
   render() {
     var onDisplayProjects = [];
@@ -96,13 +94,9 @@ class PortfolioScene extends Component {
       });
     }
 
-
-
-
-
     return (
       <div className="portfolio-scene">
-      	<Grid>
+      	<Grid className="portfolio-grid">
       	  <Row>
       	  	<Cell columns={12}>
               <SearchBar placeholder='Search using skills, tools or experiences' 
@@ -113,11 +107,8 @@ class PortfolioScene extends Component {
             </Cell>
       	  </Row>
       	  <Row className="content">
-
-            
             {onDisplayProjects.map((item) => item)}
             {onDisplayWorkExperiences.map((item) => item)}
-
       	  </Row>
       	</Grid>
       </div>
