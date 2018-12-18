@@ -20,7 +20,7 @@ export const Skill = {		//language || frameworks
 export const Tool = {
   BITNAMI: 'Bitnami',
   DBEAVER: 'DBeaver',
-  DIGITAL_OCEAN: 'Digital_Ocean',
+  DIGITAL_OCEAN: 'Digital Ocean',
   ECLIPSE: 'Eclipse',
   HEROKU: 'Heroku',
   PAPERPLANE: 'paperplane.io',
