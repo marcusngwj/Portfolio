@@ -3,17 +3,30 @@ import './style.scss';
 
 import PortfolioMetadata from './PortfolioMetadata.js';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
-import SearchBar from 'components/searchbar/SearchBar';
+
 import CardTheme from 'components/card/CardTheme';
+
+import XXX from 'components/searchbar/XXX';
+import { Skill, Tool, Exp, Misc } from './Keywords';
 
 class PortfolioScene extends Component {
   metaData = new PortfolioMetadata();
   projects = this.getArrayOrderByKeyDescending(this.metaData.projects);
   workExperiences = this.getArrayOrderByKeyDescending(this.metaData.workExperiences);
 
+  getSuggestions() {
+    var skillArr = Object.keys(Skill).map(function(key) { return Skill[key]; });
+    var toolArr = Object.keys(Tool).map(function(key) { return Tool[key]; });
+    var expArr = Object.keys(Exp).map(function(key) { return Exp[key]; });
+    var miscArr = Object.keys(Misc).map(function(key) { return Misc[key]; });
+
+    return ((skillArr.concat(toolArr)).concat(expArr)).concat(miscArr);
+  }
+
   getArrayOrderByKeyDescending(dict) {
     var items = Object.keys(dict).map(function(key) { return [key, dict[key]]; });
     items.sort(function(first, second) { return second[0] - first[0]; });
+    this.getSuggestions();
     return items;
   };
 
@@ -22,7 +35,9 @@ class PortfolioScene extends Component {
       <div className="portfolio-scene">
       	<Grid>
       	  <Row>
-      	  	<Cell columns={12}><SearchBar /></Cell>
+      	  	<Cell columns={12}>
+              <XXX placeholder='Search using skills, tools or experiences' suggestions={this.getSuggestions()}/>
+            </Cell>
       	  </Row>
       	  <Row className="content">
       	  	{this.projects.map((arr) => <Cell columns={4} key={arr[0]}>
