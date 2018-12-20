@@ -70,6 +70,28 @@ class W40001 extends Component {
 		      </Cell>
 		      <Cell columns={1} phoneColumns={2}></Cell>
 		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">And the journey begins...</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-text">To be updated soon. Stay tuned!</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">DWS Asia Investment Submit 2018</p>
+	      	    <p className="content-text">In may 2018,</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
 		  </Grid>
       	</TopAppBarFixedAdjust>
       </div>
