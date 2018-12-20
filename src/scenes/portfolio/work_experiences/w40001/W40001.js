@@ -7,6 +7,8 @@ import TagList from 'components/taglist/TagList';
 import PortfolioMetadata from 'scenes/portfolio/PortfolioMetadata';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
 
+import firstPR from './img/first_pull_request.png';
+
 class W40001 extends Component {
   render() {
     return (
@@ -73,14 +75,37 @@ class W40001 extends Component {
 		    <Row className="content-grid-row">
 		      <Cell columns={2}></Cell>
 	      	  <Cell columns={8}>
-	      	    <p className="content-title">And the journey begins...</p>
+	      	    <p className="content-title">My Journey</p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>
 		    <Row>
 		      <Cell columns={2}></Cell>
-	      	  <Cell columns={8}>
-	      	    <p className="content-text">To be updated soon. Stay tuned!</p>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <p className="content-text">
+	      	      I joined the team without any prior knowledge on iOS development and Objective-C nor did I have any experience working with macOS.
+	      	      The initial learning curve, thus, was very steep.
+	      	      Not only did I need to learn to work with using a new OS, I had to learn a new programming language, as well as the many different tools that I would be using for development.
+	      	      Thanks to the videos by Devslopes, I was able to quickly learn the basics and deliever my first pull request in 1 week.
+	      	    </p>
+	      	  </Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <img src={firstPR} className="content-image-fill-grid" alt='firstPR'/>
+		      </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+		      <Cell columns={2}></Cell>
+		      <Cell columns={4} tabletColumns={8}>
+	      	    <img src={firstPR} className="content-image-fill-grid" alt='firstPR'/>
+		      </Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <p className="content-text">
+	      	      I joined the team without any prior knowledge on iOS development and Objective-C nor did I have any experience working with macOS.
+	      	      The initial learning curve, thus, was very steep.
+	      	      Not only did I need to learn to work with using a new OS, I had to learn a new programming language, as well as the many different tools that I would be using for development.
+	      	      Thanks to the videos by Devslopes, I was able to quickly learn the basics and deliever my first pull request in 1 week.
+	      	    </p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>

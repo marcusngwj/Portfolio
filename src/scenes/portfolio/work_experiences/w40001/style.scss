@@ -33,6 +33,10 @@ $COLOR_WORK_EXPERIENCE_THEME: #40B588;
     margin-top: 3rem;
   }
 
+  .content-grid-subrow {
+    margin-top: 1.5rem;
+  }
+
   .content-title {
   	@include work-experience-content-title($COLOR_WORK_EXPERIENCE_THEME);
   }
@@ -40,6 +44,10 @@ $COLOR_WORK_EXPERIENCE_THEME: #40B588;
   .content-text {
     @include work-experience-content-text;
     line-height: 1.5rem;
+  }
+
+  .content-image-fill-grid {
+    width: 100%;
   }
 
   .testimonial-background {
