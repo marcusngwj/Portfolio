@@ -2,7 +2,7 @@ export const Path = {
   HOME: '/',
   ABOUT: '/about',
   PORTFOLIO: '/portfolio',
-  RESUME: 'https://github.com/marcusngwj/Resume/releases/download/9-dec-2018/Marcus.Ng.Wen.Jian.pdf',
+  RESUME: 'https://github.com/marcusngwj/Resume/files/2697153/Marcus.Ng.Wen.Jian.pdf',
   CONTACT: '/contact',
   PAGE_NOT_FOUND: '*'
 };

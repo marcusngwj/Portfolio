@@ -36,6 +36,9 @@ Example module: `src/components/button/ButtonIconGithub`
 
 Highly customisable slider
 
+#### Image Compression - [TinyPNG](https://tinypng.com/)
+
+Reduce size of image
 
 ## Deployment
 
