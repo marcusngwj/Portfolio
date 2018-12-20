@@ -1,0 +1,26 @@
+@import 'theme/theme.scss';
+
+@mixin work-experience-banner {
+  width: 100vw;
+  max-width:100%;
+  pointer-events: none;
+  @include user-select(none);
+}
+
+@mixin work-experience-content-title($color) {
+  margin: 0;
+  font-size: 2em;
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin work-experience-content-subtitle($color) {
+  margin: 0;
+  font-size: 1.5em;
+  font-weight: 700;
+  color: $color;
+}
+
+@mixin work-experience-content-text {
+  margin: 0.5rem 0rem 0rem 0rem;
+}

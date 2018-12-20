@@ -23,7 +23,7 @@ class P10005 extends Component {
       <div className="p10005">
       	<TopAppBarFixedAdjust>
 	      <img src={banner} className="banner" alt="banner_p10005"/>
-	      <TagList list={new PortfolioMetadata().getTagListFromProject('p10005')} tagClassName="tag"/>
+	      <TagList list={new PortfolioMetadata().getTagList('p10005')} tagClassName="tag"/>
 	      <div className="button-container">
 	        <ButtonIconPng className="button" outlined label='Project' url='https://cs2102-crowdfunding.herokuapp.com/' icon={punchLogo} />
 	        <ButtonIconGithub className="button" outlined label='Github' url='https://github.com/CS2102Group18/CS2102' />

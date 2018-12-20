@@ -26,6 +26,7 @@ export const Tool = {
   PAPERPLANE: 'paperplane.io',
   PHPMYADMIN: 'phpMyAdmin',
   PHPPGADMIN: 'phpPgAdmin',
+  XCODE: 'Xcode'
 };
 
 export const Exp = {

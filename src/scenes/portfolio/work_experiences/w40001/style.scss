@@ -1,2 +1,44 @@
 @import 'theme/theme.scss';
+@import 'scenes/portfolio/work_experiences/mixins.scss';
 @import '@material/react-layout-grid/index.scss';
+@import 'components/taglist/mixins.scss';
+@import 'components/button/mixins.scss';
+
+$COLOR_WORK_EXPERIENCE_THEME: #40B588;
+
+.w40001 {
+  @include selection(black, #97FFDF);
+  .banner {
+  	@include work-experience-banner;
+  }
+
+  .tag {
+  	@include tag-set-color(#72E7BA, black);
+  }
+
+  a {
+    text-decoration-color: $COLOR_WORK_EXPERIENCE_THEME;
+    -webkit-text-decoration-color: $COLOR_WORK_EXPERIENCE_THEME; /* Safari */  
+    color: $COLOR_WORK_EXPERIENCE_THEME;
+    font-weight: 700;
+
+    &:visited {
+      text-decoration-color: $COLOR_WORK_EXPERIENCE_THEME;
+      -webkit-text-decoration-color: $COLOR_WORK_EXPERIENCE_THEME; /* Safari */ 
+      color: $COLOR_WORK_EXPERIENCE_THEME;
+    }
+  }
+
+  .content-grid-row {
+    margin-top: 3rem;
+  }
+
+  .content-title {
+  	@include work-experience-content-title($COLOR_WORK_EXPERIENCE_THEME);
+  }
+
+  .content-text {
+    @include work-experience-content-text;
+    line-height: 1.5rem;
+  }
+}

@@ -5,10 +5,9 @@
 @import 'components/button/mixins.scss';
 
 $COLOR_PROJECT_THEME: #407EB7;
-$COLOR_PROJECT_SELECTION_BACKGROUND: #6C757D;
 
 .p10005 {
-  @include selection(white, $COLOR_PROJECT_SELECTION_BACKGROUND);
+  @include selection(white, #6C757D);
   .banner {
   	@include project-banner;
   }
