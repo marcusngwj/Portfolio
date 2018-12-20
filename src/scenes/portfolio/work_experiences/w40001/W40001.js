@@ -51,6 +51,25 @@ class W40001 extends Component {
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>
+		    <Row>
+		      <Cell columns={1} phoneColumns={2}></Cell>
+		      <Cell columns={10} phoneColumns={8}>
+		        <div className="testimonial-background">
+		          <div className="testimonial-content">
+		            <p>"As his mentor, I found Marcus to be an independent learner as he had required only little guidance from myself. He managed to learn fast and picked up mobile development within a month without prior experience. He was receptive in suggestions for improvements and showed plenty of desire to learn.</p>
+                    <p>Throughout his internship, Marcus has been diligent in his work. He took responsibility in finishing his work on time and produced quality work. From his pull requests and extensive documentation, one can tell that he took his work very seriously. As his code reviewer, I rarely found any issues with his code, other than suggestions on how to write cleaner code which he would swiftly amend and took note of for future references.</p> 
+                    <p>As part of his work, Marcus was required to convert software requirements and designs into an actual working mobile application. Being detail orientated, he would clarify ambiguous items with our project manager and designer. He was particularly thoughtful of the user experience and was comprehensive in ensuring that the app works well across all iOS devices.</p>
+                    <p>Since our company is based in 4 cities, Marcus was required to work remotely with other team members based in Malaysia, Taiwan and Hong Kong. Despite this and being new, he managed to communicate well and built rapport with the team. As a testament, he is missed dearly by his team mates.</p>
+                    <p>I am pleased to have had the opportunity to work with Marcus and I think he would be a great member to any team he joins. I wish him all the best in his final year of studies and look forward to him returning to Micepad as a full time member."</p>
+		          </div>
+		          <div className="testimonial-recommender">
+		            <p className="name">James Gwee</p>
+		            <p className="designature">Chief Technology Officer</p>
+		          </div>
+		        </div>
+		      </Cell>
+		      <Cell columns={1} phoneColumns={2}></Cell>
+		    </Row>
 		  </Grid>
       	</TopAppBarFixedAdjust>
       </div>

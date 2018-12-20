@@ -41,4 +41,22 @@ $COLOR_WORK_EXPERIENCE_THEME: #40B588;
     @include work-experience-content-text;
     line-height: 1.5rem;
   }
+
+  .testimonial-background {
+    background: rgba(114, 231, 186, 0.3);
+    padding: 1rem;
+
+    .testimonial-recommender {
+      .name {
+        padding: 0;
+        margin: 0;
+        font-weight: 700;
+      }
+
+      .designature {
+        padding: 0;
+        margin: 0;
+      }
+    }
+  }
 }
