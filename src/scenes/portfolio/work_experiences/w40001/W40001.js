@@ -136,7 +136,7 @@ class W40001 extends Component {
 	      	    <p className="content-text">
 	      	      For my internship, there was no hard and fast guidelines or fixed training programme.
 	      	      Although we observed the Agile SDLC on a weekly basis, there were rooms for negotiation.
-	      	      The faster I clear my assigned task, the higher the chance I could ask to try solving something new, something challenging.
+	      	      The faster I clear my assigned task, the higher the chance I could ask to try working on something new, something challenging.
 	      	      By doing so allowed me to gain more experience and have a fulfiling internship. 
 	      	    </p>
 	      	  </Cell>
