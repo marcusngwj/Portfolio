@@ -11,6 +11,8 @@ import Carousel from 'components/carousel/Carousel';
 import firstPR from './img/first_pull_request.png';
 import rsvpMainIphone from './img/rsvp_main_iphone.png';
 import rsvpMainIpad from './img/rsvp_main_ipad.png';
+import sortEventIpad from './img/sort_event_ipad.png';
+import dws from './img/dws.png';
 
 class W40001 extends Component {
   render() {
@@ -111,11 +113,65 @@ class W40001 extends Component {
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>
+		    <Row className="content-grid-subrow">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-text">
+	      	      As I got more familiar with the UI design and structure, the level of difficulty of tasks increases.
+	      	      Besides creating and fixing static UI, I had had the opportunity to create more dynamic UI such as presenting search results based on user's search input.
+	      	    </p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <img src={sortEventIpad} className="content-image-fill-grid" alt='sortEventIpad' />
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-text">
+	      	      For my internship, there was no hard and fast guidelines or fixed training programme.
+	      	      Although we observed the Agile SDLC on a weekly basis, there were rooms for negotiation.
+	      	      The faster I clear my assigned task, the higher the chance I could ask to try solving something new, something challenging.
+	      	      By doing so allowed me to gain more experience and have a fulfiling internship. 
+	      	    </p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
 		    <Row className="content-grid-row">
 		      <Cell columns={2}></Cell>
 	      	  <Cell columns={8}>
 	      	    <p className="content-title">DWS Asia Investment Submit 2018</p>
-	      	    <p className="content-text">In may 2018,</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <p className="content-text">
+	      	      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	      	    </p>
+	      	  </Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <img src={dws} className="content-image-fill-grid" id="dws-reception" alt='dws'/>
+		      </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">Kuala Lumpur Trip</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">Retrospect</p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>

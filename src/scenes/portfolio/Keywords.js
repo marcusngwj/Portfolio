@@ -30,6 +30,7 @@ export const Tool = {
 };
 
 export const Exp = {
+  AGILE: 'Agile SDLC',
   ANDROID: 'Android',
   BACK_END: 'Back-End Development',
   DATABASE: 'Database',

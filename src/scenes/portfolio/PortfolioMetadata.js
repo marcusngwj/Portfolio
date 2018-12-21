@@ -83,7 +83,7 @@ class PortfolioMetadata  {
 					 period: 'Jan 2018 - Jun 2018',
 					 image: w40001,
 					 url: PathPortfolio.W40001,
-					 tags: [Skill.OBJC, Tool.XCODE, Exp.IOS, Exp.MOBILE, Exp.FRONT_END, Misc.IPHONE, Misc.IPAD],
+					 tags: [Skill.OBJC, Tool.XCODE, Exp.IOS, Exp.MOBILE, Exp.FRONT_END, Exp.AGILE, Misc.IPHONE, Misc.IPAD],
 					 keywords: []
 				    },
 
