@@ -68,4 +68,28 @@ $COLOR_WORK_EXPERIENCE_THEME: #40B588;
       }
     }
   }
+
+  #cell-rsvp-main-rhs {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(2);
+    }
+
+    @include breakpoint(tablet) {
+      @include mdc-layout-grid-cell-order(2);
+    }
+
+    #rsvpMainIpad {
+      margin-top: 3rem;
+    }
+  }
+
+  #cell-rsvp-main-lhs {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+
+    @include breakpoint(tablet) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+  }
 }

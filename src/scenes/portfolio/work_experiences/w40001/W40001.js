@@ -6,8 +6,11 @@ import banner from './img/banner.png';
 import TagList from 'components/taglist/TagList';
 import PortfolioMetadata from 'scenes/portfolio/PortfolioMetadata';
 import {Cell, Grid, Row} from '@material/react-layout-grid';
+import Carousel from 'components/carousel/Carousel';
 
 import firstPR from './img/first_pull_request.png';
+import rsvpMainIphone from './img/rsvp_main_iphone.png';
+import rsvpMainIpad from './img/rsvp_main_ipad.png';
 
 class W40001 extends Component {
   render() {
@@ -96,16 +99,15 @@ class W40001 extends Component {
 		    </Row>
 		    <Row className="content-grid-subrow">
 		      <Cell columns={2}></Cell>
-		      <Cell columns={4} tabletColumns={8}>
-	      	    <img src={firstPR} className="content-image-fill-grid" alt='firstPR'/>
+		      <Cell columns={4} tabletColumns={8} id="cell-rsvp-main-lhs">
+		        <img src={rsvpMainIphone} className="content-image-fill-grid" alt='rsvpMainIphone' />  
 		      </Cell>
-	      	  <Cell columns={4} tabletColumns={8}>
+	      	  <Cell columns={4} tabletColumns={8} id="cell-rsvp-main-rhs">
 	      	    <p className="content-text">
-	      	      I joined the team without any prior knowledge on iOS development and Objective-C nor did I have any experience working with macOS.
-	      	      The initial learning curve, thus, was very steep.
-	      	      Not only did I need to learn to work with using a new OS, I had to learn a new programming language, as well as the many different tools that I would be using for development.
-	      	      Thanks to the videos by Devslopes, I was able to quickly learn the basics and deliever my first pull request in 1 week.
+	      	      Slowly, I moved away from building individual small UI components to building more complex deliverables based on the blueprint design provided by the UI/UX designer.
+	      	      My first challenge was to give the login page a makeover.
 	      	    </p>
+	      	    <img src={rsvpMainIpad} className="content-image-fill-grid" id="rsvpMainIpad" alt='rsvpMainIpad' />
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>
