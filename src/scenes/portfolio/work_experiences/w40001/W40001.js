@@ -13,6 +13,9 @@ import rsvpMainIphone from './img/rsvp_main_iphone.png';
 import rsvpMainIpad from './img/rsvp_main_ipad.png';
 import sortEventIpad from './img/sort_event_ipad.png';
 import dws from './img/dws.png';
+import klccKlTower from './img/klcc_kltower.png';
+import klFood from './img/kl_food.png';
+import iftar from './img/iftar.png';
 
 class W40001 extends Component {
   render() {
@@ -168,6 +171,28 @@ class W40001 extends Component {
 		      <Cell columns={2}></Cell>
 	      	  <Cell columns={8}>
 	      	    <p className="content-title">Kuala Lumpur Trip</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+		      <Cell columns={2}></Cell>
+		      <Cell columns={4} tabletColumns={8}>
+		        <Carousel settings={{dots: true,
+		        	                 arrows: false,
+                                     infinite: true,
+                                     speed: 500,
+                                     slidesToShow: 1,
+                                     slidesToScroll: 1,
+                                     autoplay: true}}>
+		          <img src={klccKlTower} alt='klccKlTower' />
+		          <img src={klFood} alt='klFood' />
+		          <img src={iftar} alt='iftar' />
+		        </Carousel>
+		      </Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <p className="content-text">
+	      	      For the finale of my internship, the company sponsored me to work at the Kuala Lumpur office for 2 weeks.
+	      	    </p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>
