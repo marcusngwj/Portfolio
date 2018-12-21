@@ -153,7 +153,10 @@ class W40001 extends Component {
 		      <Cell columns={2}></Cell>
 	      	  <Cell columns={4} tabletColumns={8}>
 	      	    <p className="content-text">
-	      	      Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum
+	      	      In May 2018, I was given the opportunity to assist as a receptionist in the DWS flagship event, where investors from around the globe meet for discussion.
+	      	      During this event, I got to interact with organisers from Hong Kong and Germany and understand their working culture, as well as investors from different parts of the world.
+	      	      Besides helping to check in attendees using our app, I was able to get firsthand feedbacks from the users.
+	      	      Collecting feedbacks is very important for developers as it helps us to improve the products we are developing.
 	      	    </p>
 	      	  </Cell>
 	      	  <Cell columns={4} tabletColumns={8}>
