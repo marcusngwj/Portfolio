@@ -48,5 +48,6 @@ export const Misc = {
   IPAD: 'iPad',
   NETWORK_PROTOCOL: 'Network Protocol',
   SPA: 'Static Program Analyzer',
+  TELEGRAM_BOT: 'Telegram Bot API',
   WEB_SCRAP: 'Web Scrapping'
 };

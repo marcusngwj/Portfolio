@@ -52,7 +52,7 @@ class PortfolioMetadata  {
 					 period: 'Jan 2017',
 					 image: p10002,
 					 url: PathPortfolio.P10002,
-					 tags: [Skill.PYTHON, Misc.WEB_SCRAP, Tool.HEROKU, Misc.BEAUTIFUL_SOUP, Misc.GENIUS],
+					 tags: [Skill.PYTHON, Misc.WEB_SCRAP, Tool.HEROKU, Misc.TELEGRAM_BOT, Misc.BEAUTIFUL_SOUP, Misc.GENIUS],
 					 keywords: []
 				    },
 
