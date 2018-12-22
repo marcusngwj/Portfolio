@@ -16,6 +16,7 @@ import dws from './img/dws.png';
 import klccKlTower from './img/klcc_kltower.png';
 import klFood from './img/kl_food.png';
 import iftar from './img/iftar.png';
+import teamPhoto from './img/team_photo.png';
 
 class W40001 extends Component {
   render() {
@@ -192,6 +193,12 @@ class W40001 extends Component {
 	      	  <Cell columns={4} tabletColumns={8}>
 	      	    <p className="content-text">
 	      	      For the finale of my internship, the company sponsored me to work at the Kuala Lumpur office for 2 weeks.
+	      	      It was my first time in KL and my first time working overseas.
+	      	      I am grateful to be given this opportunity to experience different culture and working styles.
+	      	      <br /><br />
+	      	      In the 2 weeks, I got to explore KL and eat a lot of delicious food.
+	      	      My favourite was the pork noodles sold near the office. 
+	      	      Towards the end of the trip, I had iftar together with my colleagues.
 	      	    </p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
@@ -200,6 +207,25 @@ class W40001 extends Component {
 		      <Cell columns={2}></Cell>
 	      	  <Cell columns={8}>
 	      	    <p className="content-title">Retrospect</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-text">
+	      	      This internship has been an incredible experience for me.
+	      	      There were many first times — first time working outside of school as a software developer, first time working on iOS, first time working overseas and the list goes on.
+	      	    </p>
+	      	    <p>
+	      	      To end off this internship, the CTO left me an invaluable quote of his:
+	      	    </p>
+	      	    <div id="retrospect-quote-container">
+	      	      <p id="retrospect-quote-text">
+	      	        What you have learnt today would probably be irrelevant in 5 to 10 years. Therefore, keep up the spirit of learning. Meanwhile, it is time to get creative, to innovate and create solutions that would improve the lives of others.
+	      	      </p>
+	      	    </div>
+	      	    <img src={teamPhoto} className="content-image-fill-grid" id="team-photo" alt='teamPhoto'/>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
 		    </Row>
