@@ -40,6 +40,12 @@ Highly customisable slider
 
 Reduce size of image
 
+#### Image Editor - [Photopea](https://www.photopea.com/)
+
+Free online image editor - supports popular formats like psd
+
+- [Perspective Transform](https://www.photopea.com/learn/free-transform)
+
 ## Deployment
 
 In the project directory, you can run:
