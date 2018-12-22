@@ -194,6 +194,7 @@ class W40001 extends Component {
 	      	    <p className="content-text">
 	      	      For the finale of my internship, the company sponsored me to work at the Kuala Lumpur office for 2 weeks.
 	      	      It was my first time in KL and my first time working overseas.
+	      	      It was indeed an eye-opener.
 	      	      I am grateful to be given this opportunity to experience different culture and working styles.
 	      	      <br /><br />
 	      	      In the 2 weeks, I got to explore KL and eat a lot of delicious food.
@@ -216,6 +217,7 @@ class W40001 extends Component {
 	      	    <p className="content-text">
 	      	      This internship has been an incredible experience for me.
 	      	      There were many first times — first time working outside of school as a software developer, first time working on iOS, first time working overseas and the list goes on.
+	      	      I had also gained many new friends.
 	      	    </p>
 	      	    <p>
 	      	      To end off this internship, the CTO left me an invaluable quote of his:
