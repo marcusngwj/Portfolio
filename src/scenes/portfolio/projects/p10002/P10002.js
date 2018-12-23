@@ -10,6 +10,7 @@ import ButtonIconGithub from 'components/button/ButtonIconGithub';
 import ButtonIconTelegram from 'components/button/ButtonIconTelegram';
 
 import initialDesign from './img/initial_design.png';
+import searchLyrics from './img/search_lyrics.png';
 
 class P10002 extends Component {
   render() {
@@ -97,6 +98,28 @@ class P10002 extends Component {
 		          The code behind it would inject the input provided by the user into a formatted url and access the link directly.
 		          This was a little hack I did and would not be able to tolerate any form of misspelling.
 		        </p>
+		      </Cell>
+		      <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">New Design</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+	      	  <Cell columns={2}></Cell>
+		      <Cell columns={4} tabletColumns={8} id="cell-new-design-desc">
+		        <p className="content-text">
+		          The new design provides user with more choices.
+		          User can now search for anything and the bot will response with options that may match the input provided by the user.
+		          User can then choose from the list and select their desired lyrics.
+		          The bot can also be added into any group chat, making it more convenient to share lyrics. 
+		        </p>
+		      </Cell>
+		      <Cell columns={4} tabletColumns={8} id="cell-new-design-img">
+	      	    <img src={searchLyrics} className="content-image-fill-grid" alt='searchLyrics'/>
 		      </Cell>
 		      <Cell columns={2}></Cell>
 		    </Row>

@@ -56,13 +56,28 @@ $COLOR_PROJECT_THEME: #872F06;
   	@include project-content-title($COLOR_PROJECT_THEME);
   }
 
-  .content-subtitle {
-    @include project-content-subtitle($COLOR_PROJECT_THEME);
-  }
-
   .content-text {
     @include project-content-text;
     line-height: 1.5rem;
   }
-  
+
+  #cell-new-design-img {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(2);
+    }
+
+    @include breakpoint(tablet) {
+      @include mdc-layout-grid-cell-order(2);
+    }
+  }
+
+  #cell-new-design-desc {
+    @include breakpoint(phone) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+
+    @include breakpoint(tablet) {
+      @include mdc-layout-grid-cell-order(3);
+    }
+  }
 }
