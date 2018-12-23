@@ -27,6 +27,19 @@ $COLOR_PROJECT_THEME: #872F06;
   	@include tag-set-color(#B58663, white);
   }
 
+  a {
+    text-decoration-color: $COLOR_PROJECT_THEME;
+    -webkit-text-decoration-color: $COLOR_PROJECT_THEME; /* Safari */  
+    color: $COLOR_PROJECT_THEME;
+    font-weight: 700;
+
+    &:visited {
+      text-decoration-color: $COLOR_PROJECT_THEME;
+      -webkit-text-decoration-color: $COLOR_PROJECT_THEME; /* Safari */ 
+      color: $COLOR_PROJECT_THEME;
+    }
+  }
+
   .content-grid-row {
     margin-top: 3rem;
   }
