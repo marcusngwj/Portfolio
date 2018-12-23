@@ -42,7 +42,7 @@ class P10002 extends Component {
 		          My role was to learn and perform web scrapping using Beautiful Soup Python Library and present the resulting lyrics directly to the user.
 		          The bot was served locally from my laptop as we had not found a suitable server to host it.
 		          <br /><br />
-		          After the hackathon, I went to find ways to structure our code better and ways to retrieve more reliable data as compared to web scrapping.
+		          After the hackathon, I went to find ways to structure our code better and a more reliable method to retrieve data as compared to web scrapping.
 		          Hence I:
 		          <ul>
 		            <li>Redesigned the overall architecture</li>
@@ -52,6 +52,27 @@ class P10002 extends Component {
 		        </div>
 		      </Cell>
 		      <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">Motivation</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row>
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-text">
+	      	      Initially, we did not have any idea what to build in 24 hours.
+	      	      We just started our programming journey not long ago and were very inexperienced.
+	      	      A friend from another team suggested that we can try learning Python and build a telegram bot, which was quite a hot topic in the hackathon, together with chrome extension.
+	      	      As we were thinking about what one can do when using the messenger app, the idea of sharing struck us.
+	      	      If we were to sing in a group, how frustrating would it be for someone who does not know the lyrics?
+	      	      How convenient it would be if a person can quickly search for the lyrics and send it to everyone in the group chat, without leaving the messenging app.
+	      	    </p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
 		    </Row>
 		  </Grid>
       	</TopAppBarFixedAdjust>
