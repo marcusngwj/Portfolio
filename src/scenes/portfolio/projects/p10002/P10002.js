@@ -48,7 +48,7 @@ class P10002 extends Component {
 		          <br /><br />
 		          After the hackathon, I went to find ways to structure our code better and a more reliable method to retrieve data as compared to web scrapping.
 		          Hence I:
-		          <ul>
+		          <ul id="responsibility-list">
 		            <li>Redesigned the overall architecture</li>
 		            <li>Incorporated the use of Genius API</li>
 		            <li>Hosted the bot on Heroku</li>

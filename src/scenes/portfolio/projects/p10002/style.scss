@@ -61,6 +61,10 @@ $COLOR_PROJECT_THEME: #872F06;
     line-height: 1.5rem;
   }
 
+  #responsibility-list {
+    margin-bottom: 0;
+  }
+
   #cell-new-design-img {
     @include breakpoint(phone) {
       @include mdc-layout-grid-cell-order(2);
