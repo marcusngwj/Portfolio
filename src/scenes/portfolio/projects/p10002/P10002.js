@@ -9,6 +9,8 @@ import {Cell, Grid, Row} from '@material/react-layout-grid';
 import ButtonIconGithub from 'components/button/ButtonIconGithub';
 import ButtonIconTelegram from 'components/button/ButtonIconTelegram';
 
+import initialDesign from './img/initial_design.png';
+
 class P10002 extends Component {
   render() {
     return (
@@ -27,6 +29,7 @@ class P10002 extends Component {
 		        <p className="content-title">Summary</p>
 		        <p className="content-text">
 		          A telegram bot that retrieves song lyrics from <a target='_blank' rel='noopener noreferrer' href="https://genius.com/">Genius</a> when provided with a song title or singer's name.
+		          It can be accessed from any device as long as the device supports Telegram.
 		          My friend and I created this during NUS Hack&Roll Hackathon in 2017.
 		          After the hackathon, I further developed it to the current state.
 		        </p>
@@ -73,6 +76,29 @@ class P10002 extends Component {
 	      	    </p>
 	      	  </Cell>
 	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-row">
+		      <Cell columns={2}></Cell>
+	      	  <Cell columns={8}>
+	      	    <p className="content-title">Initial Design</p>
+	      	  </Cell>
+	      	  <Cell columns={2}></Cell>
+		    </Row>
+		    <Row className="content-grid-subrow">
+	      	  <Cell columns={2}></Cell>
+	      	  <Cell columns={4} tabletColumns={8}>
+	      	    <img src={initialDesign} className="content-image-fill-grid" alt='initialDesign'/>
+		      </Cell>
+		      <Cell columns={4} tabletColumns={8}>
+		        <p className="content-text">
+		          The initial design was very simple.
+		          Start by chatting with the bot and send it the title of a song and the name of the singer.
+		          It would then reply with the lyrics.
+		          The code behind it would inject the input provided by the user into a formatted url and access the link directly.
+		          This was a little hack I did and would not be able to tolerate any form of misspelling.
+		        </p>
+		      </Cell>
+		      <Cell columns={2}></Cell>
 		    </Row>
 		  </Grid>
       	</TopAppBarFixedAdjust>
