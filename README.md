@@ -45,7 +45,7 @@ Reduce size of image
 Free online image editor - supports popular formats like psd
 
 - [Perspective Transform](https://www.photopea.com/learn/free-transform)
-- [Smart Object](https://helpx.adobe.com/photoshop/using/create-smart-objects.html): If there are smart objects present in the psd template, eg. on the screen on the device, double click on smart object icon to open it. Place the desired artwork and save it. Return to the template.
+- [Smart Object](https://helpx.adobe.com/photoshop/using/create-smart-objects.html): If there are smart objects present in the psd template, eg. on the screen of a device, double click on smart object layer icon to open it. Place the desired artwork in it and save it. Return to the template.
 
 ## Deployment
 
