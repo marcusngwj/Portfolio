@@ -1,2 +1,59 @@
 @import 'theme/theme.scss';
+@import 'scenes/portfolio/projects/mixins.scss';
 @import '@material/react-layout-grid/index.scss';
+@import 'components/taglist/mixins.scss';
+@import 'components/button/mixins.scss';
+
+$COLOR_PROJECT_THEME: #3B719F;
+
+.p10004 {
+  @include selection(black, #739ABB);
+  .banner {
+  	@include project-banner;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: center;
+    margin: 3rem 0rem 2rem 0rem;
+
+    .button {
+      margin: 0rem 1rem;
+      @include button-icon-with-outline($COLOR_PROJECT_THEME, transparent, $COLOR_PROJECT_THEME, white, $COLOR_PROJECT_THEME, transparent);
+    }
+  }
+
+  .tag {
+  	@include tag-set-color($COLOR_PROJECT_THEME, white);
+  }
+
+  .content-grid-row {
+    margin-top: 3rem;
+  }
+
+  #row-title-ui {
+    margin-top: 5rem;
+  }
+
+  .content-grid-subrow {
+    margin-top: 1.5rem;
+  }
+
+  .content-image-fill-grid {
+    width: 100%;
+  }
+
+  .content-title {
+  	@include project-content-title($COLOR_PROJECT_THEME);
+  }
+
+  .content-subtitle {
+    @include project-content-subtitle($COLOR_PROJECT_THEME);
+  }
+
+  .content-text {
+    @include project-content-text;
+    line-height: 1.5rem;
+  }
+
+}

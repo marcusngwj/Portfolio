@@ -34,7 +34,7 @@ class PortfolioMetadata  {
 					 period: 'Aug 2018 - Nov 2018',
 					 image: p10004,
 					 url: PathPortfolio.P10004,
-					 tags: [Skill.JAVA, Tool.DIGITAL_OCEAN, Misc.NETWORK_PROTOCOL],
+					 tags: [Skill.JAVA, Tool.ECLIPSE, Tool.DIGITAL_OCEAN, Misc.NETWORK_PROTOCOL],
 					 keywords: []
 				    },
 
