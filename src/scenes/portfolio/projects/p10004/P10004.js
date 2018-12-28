@@ -11,6 +11,7 @@ import ButtonIconGithub from 'components/button/ButtonIconGithub';
 
 import architecture from './img/architecture.png';
 import heartbeat from './img/heartbeat.png';
+import heartbeatScreenshot from './img/heartbeat_ss.png';
 
 class P10004 extends Component {
   render() {
@@ -81,6 +82,13 @@ class P10004 extends Component {
 		    <Cell columns={2}></Cell>
 	      	<Cell columns={8}>
 	      	  <p className="content-title">Heartbeat Protocol</p>
+	      	</Cell>
+	      	<Cell columns={2}></Cell>
+		  </Row>
+		  <Row className="content-grid-subrow">
+		    <Cell columns={2}></Cell>
+	      	<Cell columns={8}>
+	      	  <img src={heartbeatScreenshot} className="content-image-fill-grid" alt='heartbeatScreenshot'/>
 	      	</Cell>
 	      	<Cell columns={2}></Cell>
 		  </Row>
