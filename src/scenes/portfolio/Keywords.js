@@ -37,7 +37,7 @@ export const Exp = {
   FRONT_END: 'Front-end Development',
   FULL_STACK: 'Full Stack',
   IOS: 'iOS',
-  MOBILE: 'Mobile Development',
+  MOBILE: 'Mobile App Development',
   WEB: 'Web Development'
 };
 
